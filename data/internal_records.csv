@@ -1,0 +1,137 @@
+code,record_type,insurance_type,status,details
+AUT-334900,claim,auto,received,Initial claim notice logged; supporting documents pending review.
+AUT-667901,claim,auto,under_review,Claim file is under review; incident details are being checked.
+CLM-120884,claim,unknown,waiting_for_documents,Claim is open and awaiting additional documents from the submitter.
+CLM-220774,claim,unknown,assessment_in_progress,Assessment has started; damage information is being evaluated.
+CLM-22091,claim,unknown,received,Claim has been registered; next step is document validation.
+CLM-330144,claim,unknown,under_review,Claim is under review pending confirmation of loss details.
+CLM-332119,claim,unknown,waiting_for_documents,Additional evidence is required before assessment can continue.
+CLM-470833,claim,unknown,assessment_in_progress,Assessment is in progress; file has been assigned for handling.
+CLM-551933,claim,unknown,payment_processing,Claim has completed review and payment processing has started.
+CLM-554782,claim,unknown,closed,Claim is closed; further questions require manual follow-up.
+CLM-555190,claim,unknown,received,Claim was received and queued for initial checks.
+CLM-665430,claim,unknown,under_review,Claim is being reviewed for completeness and coverage checks.
+CLM-771044,claim,unknown,waiting_for_documents,A requested repair report is still missing from the claim file.
+CLM-774205,claim,unknown,assessment_in_progress,Claim assessment is underway with existing documents.
+CLM-778230,claim,unknown,payment_processing,Settlement payment processing has begun for this claim.
+CLM-845221,claim,unknown,closed,Claim has been closed after handling completion.
+CLM-904331,claim,unknown,received,Claim record is on file; further information may be requested.
+CLM-996210,claim,unknown,under_review,Claim is under review due to a pending verification step.
+HCL-118620,claim,home,waiting_for_documents,Home claim is awaiting photos and repair documentation.
+HCL-119804,claim,home,assessment_in_progress,Assessment is in progress for reported property damage.
+HCL-640902,claim,home,received,Home claim has been received and logged for processing.
+HCL-700418,claim,home,under_review,Claim is under review pending policy and damage checks.
+HCL-778811,claim,home,payment_processing,Approved handling steps are complete and payment processing is underway.
+HCL-900517,claim,home,closed,Home claim is closed and retained for reference.
+HCL-905744,claim,home,waiting_for_documents,Further estimate documents are required before review can continue.
+TRC-204771,claim,travel,received,Travel claim has been received and entered into the queue.
+TRC-331265,claim,travel,under_review,Travel claim is under review; trip evidence is being checked.
+TRC-440918,claim,travel,assessment_in_progress,Assessment is in progress for the travel disruption claim.
+TRC-509773,claim,travel,waiting_for_documents,Travel claim is awaiting receipts and itinerary documents.
+TRC-558120,claim,travel,payment_processing,Claim review is complete and payment processing has started.
+TRC-883214,claim,travel,closed,Travel claim is closed; any new information must be reviewed manually.
+AUT-1048837,policy,auto,active,Standard cover is currently active.
+AUT-107664,policy,auto,payment_pending,Payment verification is pending before the policy can continue.
+AUT-110889,policy,auto,active,Policy is in force with standard auto cover.
+AUT-115933,policy,auto,expired,Policy expired before the latest customer request.
+AUT-118776,policy,auto,cancelled,Policy was cancelled and is no longer active.
+AUT-190744,policy,auto,active,Coverage remains active and usable.
+AUT-220507,policy,auto,payment_pending,Renewal payment is pending confirmation.
+AUT-221990,policy,auto,active,Standard auto cover is currently active.
+AUT-228470,policy,auto,expired,Policy lapsed before the current contact was made.
+AUT-284600,policy,auto,cancelled,Policy cancellation is recorded in the system.
+AUT-305661,policy,auto,active,Policy remains active with standard terms.
+AUT-314208,policy,auto,payment_pending,Billing follow-up is needed to confirm continuation.
+AUT-333801,policy,auto,active,Auto policy is active and in good standing.
+AUT-449102,policy,auto,expired,Policy expired and requires renewal to reactivate.
+AUT-500117,policy,auto,active,Coverage is currently active.
+AUT-500889,policy,auto,cancelled,Policy was cancelled after the last billing cycle.
+AUT-501337,policy,auto,active,Active policy with standard auto cover.
+AUT-603991,policy,auto,payment_pending,Payment processing is pending for the current term.
+AUT-633118,policy,auto,expired,Policy has expired and is no longer in force.
+AUT-644901,policy,auto,active,Policy remains active for the insured vehicle.
+AUT-667812,policy,auto,cancelled,Policy cancellation is confirmed in the record.
+AUT-675214,policy,auto,active,Current auto cover is active.
+AUT-690123,policy,auto,payment_pending,Premium payment is pending verification.
+AUT-720118,policy,auto,active,Policy is active with no known interruptions.
+AUT-739105,policy,auto,expired,Policy expired prior to the latest request.
+AUT-775310,policy,auto,active,Standard auto coverage is currently in force.
+AUT-776401,policy,auto,cancelled,Policy has been cancelled and closed administratively.
+AUT-777209,policy,auto,active,Active policy with valid cover dates.
+AUT-781205,policy,auto,payment_pending,Renewal payment is awaiting processing.
+AUT-818270,policy,auto,active,Policy remains active in the system.
+AUT-832114,policy,auto,expired,The policy expired and needs renewal for further use.
+AUT-879160,policy,auto,active,Active policy record with standard coverage.
+AUT-901244,policy,auto,cancelled,Policy cancellation is on record.
+AUT-912340,policy,auto,active,Policy is active and should be treated as in force.
+AUT-947221,policy,auto,payment_pending,Payment verification remains outstanding.
+HMO-101773,policy,home,active,Standard home cover is currently active.
+HMO-113490,policy,home,payment_pending,Home policy payment is pending confirmation.
+HMO-118904,policy,home,expired,Policy expired before the latest service request.
+HMO-144739,policy,home,active,Home insurance remains active.
+HMO-188230,policy,home,cancelled,Policy was cancelled and is no longer valid.
+HMO-240761,policy,home,active,Active home policy with standard cover.
+HMO-285617,policy,home,payment_pending,Premium payment is pending.
+HMO-293018,policy,home,active,Coverage is active for the property.
+HMO-311905,policy,home,expired,Home policy has expired and requires renewal.
+HMO-318944,policy,home,active,Policy is active and in force.
+HMO-374901,policy,home,cancelled,Cancellation has been recorded for this policy.
+HMO-404512,policy,home,active,Standard home cover is active.
+HMO-415902,policy,home,payment_pending,Payment verification is still outstanding.
+HMO-440212,policy,home,active,Policy remains active with valid cover.
+HMO-450918,policy,home,expired,Policy expired and is not currently in force.
+HMO-470128,policy,home,active,Home policy is active and available for service.
+HMO-551809,policy,home,cancelled,Policy is cancelled in the internal record.
+HMO-556712,policy,home,active,Active home cover is on file.
+HMO-567128,policy,home,payment_pending,Renewal payment is pending processing.
+HMO-601347,policy,home,active,Policy is currently active.
+HMO-619874,policy,home,expired,Coverage expired before the current contact.
+HMO-620194,policy,home,active,Home insurance remains in force.
+HMO-709311,policy,home,cancelled,Policy cancellation has taken effect.
+HMO-712408,policy,home,active,Standard cover is active for the property.
+HMO-772401,policy,home,payment_pending,Payment confirmation is still pending.
+HMO-830115,policy,home,active,Active policy with standard terms.
+HMO-883190,policy,home,expired,Policy expired and is awaiting renewal if needed.
+HMO-908112,policy,home,active,Home cover is currently active.
+HMO-920455,policy,home,cancelled,Policy is marked cancelled in the system.
+HMO-937205,policy,home,active,Policy remains active and valid.
+HMO-990174,policy,home,payment_pending,Current premium payment is pending.
+HMO-993210,policy,home,active,Active home policy record.
+TRV-100447,policy,travel,active,Travel cover is currently active.
+TRV-111904,policy,travel,payment_pending,Payment verification is pending for this travel policy.
+TRV-119803,policy,travel,expired,Policy expired before the trip change request.
+TRV-218344,policy,travel,active,Travel policy is in force.
+TRV-218900,policy,travel,cancelled,Policy cancellation has been recorded.
+TRV-221608,policy,travel,active,Coverage remains active for travel use.
+TRV-229601,policy,travel,payment_pending,Premium payment is awaiting confirmation.
+TRV-254811,policy,travel,active,Active travel cover is on file.
+TRV-266509,policy,travel,expired,Policy is expired and not currently valid.
+TRV-300118,policy,travel,active,Travel policy remains active.
+TRV-308452,policy,travel,cancelled,Policy is cancelled and inactive.
+TRV-331877,policy,travel,active,Active travel insurance cover is present.
+TRV-407731,policy,travel,payment_pending,Renewal payment is pending processing.
+TRV-413089,policy,travel,active,Policy is active for the covered trip.
+TRV-439275,policy,travel,expired,Travel policy expired prior to the request.
+TRV-452108,policy,travel,active,Current travel cover is active.
+TRV-477201,policy,travel,cancelled,Policy cancellation is confirmed in the record.
+TRV-500271,policy,travel,active,Travel policy is active and valid.
+TRV-509118,policy,travel,payment_pending,Payment remains outstanding for renewal.
+TRV-550193,policy,travel,active,Standard travel cover is in force.
+TRV-603410,policy,travel,expired,Policy has expired and is no longer active.
+TRV-622847,policy,travel,active,Travel insurance remains active.
+TRV-642118,policy,travel,cancelled,Policy was cancelled before the trip date.
+TRV-665408,policy,travel,active,Active policy record for travel cover.
+TRV-670014,policy,travel,payment_pending,Payment verification is still needed.
+TRV-704119,policy,travel,active,Policy is active and available for claims.
+TRV-715309,policy,travel,expired,Policy expired before recent contact.
+TRV-771430,policy,travel,active,Travel cover remains active.
+TRV-773519,policy,travel,cancelled,Policy is cancelled and no longer in force.
+TRV-847260,policy,travel,active,Active travel insurance is on record.
+TRV-875390,policy,travel,payment_pending,A pending payment is blocking confirmation.
+TRV-880261,policy,travel,active,Policy remains active for the travel period.
+TRV-880512,policy,travel,expired,Travel policy has expired.
+TRV-900115,policy,travel,active,Current cover is active and valid.
+TRV-904512,policy,travel,cancelled,Policy cancellation is stored in the system.
+TRV-910084,policy,travel,active,Travel policy is active in the system.
+TRV-990624,policy,travel,payment_pending,Payment is pending for policy continuation.
+TRV-992103,policy,travel,active,Active travel cover is confirmed.
