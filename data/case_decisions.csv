@@ -1,0 +1,957 @@
+email_id,subject,body,insurance_type,intent,priority,policy_number,claim_number,action,decision_reason,response_email,human_note
+insurance-email-001,Question about my car policy,"Hello, I recently renewed my auto policy and I want to check if roadside assistance is included. My policy number is AUT-1048837. Please let me know what is covered and whether I need to add anything extra. Thanks.",auto,policy_information,medium,AUT-1048837,,reply_to_client,Policy record found and the customer is asking for basic coverage status only; the record provides enough information to respond safely.,"Subject: Re: Question about my car policy
+
+Hello,
+
+Thank you for reaching out. We checked your auto policy, and it is currently active. The policy record confirms that standard cover is in place.
+
+At this time, the record provided does not show whether roadside assistance is included, so I’m unable to confirm that coverage from the information available here. If you would like, a representative can review your full policy details and let you know whether any additional coverage may be needed.
+
+Best regards,
+Customer Service",
+insurance-email-002,Claim reference CLM-22091,"Good afternoon, I submitted a claim after a small water leak in my apartment last week. Could you please tell me if claim CLM-22091 has been reviewed yet? I haven't heard anything since I uploaded the photos.",home,claim_status,medium,,CLM-22091,reply_to_client,Claim record found and status information is sufficient to answer the customer’s review-status question safely.,"Subject: Re: Claim reference CLM-22091
+
+Good afternoon,
+
+Thank you for your message. I checked claim CLM-22091, and it has been received and registered.
+
+The next step is document validation, so it has not yet moved beyond the initial review stage. If any additional information is needed, you should be contacted.
+
+Kind regards,
+Customer Support",
+insurance-email-003,Travel insurance documents,"Hi, I am travelling next month and I need a copy of my travel insurance certificate. My policy number is TRV-550193. Could you send it to this email address? I may also need proof of coverage for visa purposes.",travel,document_request,medium,TRV-550193,,reply_to_client,Policy was found and is active; the request is a straightforward document request with sufficient information to respond safely.,"Subject: Re: Travel insurance documents
+
+Hello,
+
+Thank you for your message. We can confirm that policy TRV-550193 is active and that standard travel cover is in force.
+
+We can help provide a copy of your travel insurance certificate and, if needed, proof of coverage for visa purposes. Please reply to this email with the documents you need confirmed, and we will assist you further.
+
+Kind regards,
+Customer Service",
+insurance-email-004,Change of address on my home policy,"Dear team, I moved to a new flat last week and need my home insurance address updated. The policy number is HMO-772401. The new address is 14 Willow Court, apartment 3B. Please confirm if you need anything else.",home,policy_change,medium,HMO-772401,,escalate_to_human,"Policy found, but status is payment_pending, so the address change should be reviewed by a human before any policy update or confirmation is sent.",,"Please review policy HMO-772401. The customer requests an address change to 14 Willow Court, apartment 3B, but the policy is currently payment_pending. Confirm whether the address can be updated or whether payment confirmation is needed first."
+insurance-email-005,Payment did not go through,"Hello, I got a message saying my car insurance payment failed, but the money was taken from my bank account. Could you please check this? Policy number AUT-901244. I don't want my cover to lapse.",auto,payment_information,high,AUT-901244,,escalate_to_human,"Customer reports a failed payment and potential coverage lapse; the policy record shows the policy is cancelled, which is sensitive and requires human follow-up.",,"Customer says a payment failed but funds were taken from their bank account and they are worried about lapse in cover. Policy AUT-901244 is found and marked cancelled with cancellation on record. Please verify payment status, cancellation details, and next steps for the customer."
+insurance-email-006,Missing document for claim,"Hi, I opened a travel claim for lost baggage, but I forgot to attach the airline report. Claim number TRC-883214. Can I still send it now? Please let me know where to upload it.",travel,document_submission,medium,,TRC-883214,escalate_to_human,"Claim was found but is closed, so additional document submission must be handled manually.",,Customer wants to submit a missing airline report for travel claim TRC-883214. Record shows the claim is closed; please review whether the document can be accepted and provide the correct upload instructions or next steps.
+insurance-email-007,Can you explain my renewal?,"Dear Sir/Madam, I received my home insurance renewal and the premium seems higher than expected. Policy HMO-118904. Can you explain why it changed and if there is anything I can do to reduce it?",home,payment_information,medium,HMO-118904,,escalate_to_human,"Policy record found but contains only limited information and does not include renewal premium details or reasons for the change; the policy is also expired, so the request needs manual review.",,Customer asks why the home insurance renewal premium increased and whether anything can be done to reduce it. Policy HMO-118904 is found but only shows status as expired; no renewal pricing or explanation is available in the record. Please review the policy history and renewal documents and provide an appropriate explanation.
+insurance-email-008,Auto claim update please,"Good morning, I was involved in a minor collision and filed a claim yesterday. Claim number AUT-334900. I would like to know the current status and whether an adjuster has been assigned.",auto,claim_status,medium,,AUT-334900,reply_to_client,Claim record found and status information is sufficient to answer the customer’s request.,"Subject: Re: Auto claim update
+
+Good morning,
+
+Thank you for your message. I can confirm that claim AUT-334900 has been received and logged. The current status is initial claim notice received, and supporting documents are pending review.
+
+At this time, I do not see confirmation that an adjuster has been assigned yet. If anything further is needed, you will be contacted.
+
+Best regards,
+Claims Support",
+insurance-email-009,Need to add another driver,"Hi there, I want to add my wife as an additional driver on my auto policy. Policy number AUT-667812. She has a clean record. Please tell me what info you need from me.",auto,policy_change,medium,AUT-667812,,escalate_to_human,"Policy record was found, but it is cancelled, so the requested driver addition cannot be handled safely without human review and possible policy reinstatement considerations.",,Customer wants to add a driver to auto policy AUT-667812. Internal record shows the policy is cancelled. Please verify current servicing status and advise the customer on next steps before discussing any policy change.
+insurance-email-010,Lost policy paperwork,"Hello, I seem to have misplaced my home insurance policy documents. Could you resend them? The policy number is HMO-440212. I only need the latest version for my records.",home,document_request,low,HMO-440212,,reply_to_client,"Policy found and active; customer requests a copy of the latest policy documents, which can be handled safely without sensitive judgment.","Subject: Re: Lost policy paperwork
+
+Hello,
+
+Thank you for your message. I can confirm that your home insurance policy HMO-440212 is active and has valid cover.
+
+We can assist with sending a copy of the latest policy documents for your records. Please reply to this email with the best mailing or email address for delivery, and we will arrange the documents to be sent.
+
+Kind regards,
+Insurance Support",
+insurance-email-011,Travel claim question,"Dear support, I had to cancel my holiday because I was sick. I think I can claim on my travel policy, but I am not sure which papers you need. Policy TRV-900115. Please advise.",travel,policy_information,medium,TRV-900115,,reply_to_client,"Policy found and active; customer is asking for general claim document guidance, which can be answered without making coverage or claim decisions.","Dear Customer,
+
+Thank you for your email. I’m sorry to hear you were unwell and had to cancel your holiday.
+
+Your travel policy is active and valid. To help us assess a cancellation claim, please send the following documents if you have them:
+
+- Your policy number
+- Proof of booking and cancellation charges
+- Medical evidence showing you were unfit to travel, such as a doctor’s certificate or medical note
+- Receipts or invoices for any non-refundable costs
+- Any correspondence with the travel provider about the cancellation
+
+If you have already started a claim, please include any claim reference you have.
+
+Once we receive the documents, we can review the next steps.
+
+Kind regards,
+Support Team",
+insurance-email-012,Invoice for my premium,"Hi, can you email me the latest invoice for my auto insurance premium? Policy AUT-221990. My accountant needs it before the end of the month.",auto,document_request,medium,AUT-221990,,escalate_to_human,"Policy record was found, but the request is to email a latest premium invoice, which may require accessing billing documents not available in the policy record and should be handled carefully.",,Customer requests the latest premium invoice for active auto policy AUT-221990. Please verify billing/invoice availability and send the appropriate document if permitted.
+insurance-email-013,Home claim after storm,"Hello, a storm damaged part of my roof on Monday evening. I would like to open a claim. My home policy is HMO-709311. The damage is to the rear side of the house and there is a leak now.",home,claim_opening,high,HMO-709311,,escalate_to_human,Policy was found but is cancelled; the customer is requesting a new claim opening and this requires human handling due to the policy status and potential coverage implications.,,"Customer requests opening a home claim for storm damage to roof/rear side leak under policy HMO-709311. Policy record shows the policy is cancelled and cancellation has taken effect. Please verify whether any assistance, coverage exception, or alternate next steps are appropriate."
+insurance-email-014,Cancel my travel policy,"Good evening, please cancel my travel insurance starting from tomorrow because my trip has been postponed. Policy number TRV-331877. Please confirm if I will get any refund.",travel,policy_cancellation,high,TRV-331877,,escalate_to_human,Customer requests policy cancellation and asks about refund eligibility; this requires confirmation of cancellation terms and cannot be answered safely from the policy record alone.,,Please review policy TRV-331877 for cancellation request effective tomorrow and confirm whether any refund applies under the travel policy terms.
+insurance-email-015,Claim number not working,"Hi, I tried to check the status of my claim online but it says the number is invalid. The claim number I have is CLM-554782. Could you check it for me?",unknown,claim_status,medium,,CLM-554782,escalate_to_human,"The claim was found, but it is closed and the record indicates further questions require manual follow-up.",,Customer reports the claim number CLM-554782 is invalid online. Internal record shows the claim is closed and notes that further questions require manual follow-up. Please verify the customer’s request and provide a status explanation or next steps as appropriate.
+insurance-email-016,Update my phone number,"Dear team, please update the contact number on my home insurance account. Policy HMO-293018. My new mobile is 555-0148. Thank you.",home,policy_change,medium,HMO-293018,,escalate_to_human,"Customer requests a policy contact detail change, which is a policy modification and cannot be completed by email; policy record was found and is active, so the request should be handled by a human operator.",,Please verify the customer's identity and update the contact phone number on home policy HMO-293018 if authorized. Current request: change mobile to 555-0148.
+insurance-email-017,Travel delay reimbursement,"Hello, my flight was delayed for over 10 hours and I had to pay for a hotel. Can I submit this under my travel insurance? Policy TRV-100447. I have the receipts.",travel,claim_opening,medium,TRV-100447,,reply_to_client,Policy was found and is active; the request is a general claim-opening question that can be answered without sensitive adjudication.,"Subject: Re: Travel delay reimbursement
+
+Hello,
+
+Thanks for reaching out. Your travel policy is active, so you can submit a claim for review for expenses related to a delayed flight, including your hotel receipt, if those costs are covered under your policy terms.
+
+Please send in the receipts and any supporting documents you have for the delay so the claim can be reviewed.
+
+Kind regards,
+Insurance Support",
+insurance-email-018,Question about no claim discount,"Hi, I want to know whether my no claim discount is still intact on my car insurance. Policy AUT-781205. I had a windscreen repair last year, if that matters.",auto,policy_information,medium,AUT-781205,,reply_to_client,Policy record found and sufficient to answer the status question safely; no claim details were needed.,"Subject: Re: Question about no claim discount
+
+Hello,
+
+Thank you for your email. I was able to confirm that your car insurance policy AUT-781205 is active, and the current record shows that the renewal payment is awaiting processing.
+
+I’m sorry, but I’m not able to confirm the status of your no claim discount from the information available in the policy record provided. If you would like, you can reply with any additional reference details and we can look into this further.
+
+Kind regards,
+Customer Service",
+insurance-email-019,Claim documents uploaded,"Good day, I uploaded all the documents for claim CLM-332119 yesterday, but the portal still shows pending. Could you confirm if they were received? It was for a stolen bicycle from my garage.",home,document_submission,medium,,CLM-332119,reply_to_client,"Claim record found and confirms the claim is waiting for documents, so we can acknowledge receipt status without making any decision on the claim.","Dear Customer,
+
+Thank you for your message. I checked claim CLM-332119, and the claim is currently marked as waiting for documents. This means additional evidence is still needed before the review can continue.
+
+If you have already uploaded the documents, please allow a little time for the portal status to update. If the status remains unchanged, you may want to recheck that all requested files were uploaded successfully.
+
+Kind regards,
+Customer Support",
+insurance-email-020,Need policy start date,"Hello, can you tell me the exact start date of my travel policy? I only have the reference TRV-665408 and need it for a visa appointment. Thanks.",travel,policy_information,medium,TRV-665408,,escalate_to_human,"Policy record found, but the available data does not include the requested start date.",,Customer requests the exact policy start date for travel policy TRV-665408. The retrieved record only confirms an active travel policy and does not provide the start date. Please verify the policy inception/start date and respond to the customer.
+insurance-email-021,Home insurance for a rental property,"Dear insurance team, I own a rental flat and need to know if my current home policy covers it or if I need a different one. Policy HMO-830115. Please advise.",home,policy_information,medium,HMO-830115,,reply_to_client,Policy record found and request can be answered with available policy status only; no sensitive or contested issue identified.,"Dear Customer,
+
+Thank you for your email regarding policy HMO-830115.
+
+We can confirm that this is an active home policy with standard terms. Based on the information available in the policy record, we are not able to confirm specific coverage for a rental flat from this record alone.
+
+If the property is rented out, you may want to review the policy wording or speak with your insurance adviser to confirm whether your current cover remains suitable for a rental property.
+
+Kind regards,
+Insurance Team",
+insurance-email-022,Auto accident on Saturday,"Hi, I had a small accident on Saturday and want to report it. Nobody was injured, but my front bumper is damaged. My policy number is AUT-490772. What should I do next?",auto,claim_opening,high,AUT-490772,,escalate_to_human,"Policy number provided was not found in the internal records, so the request cannot be answered safely or completely.",,"Customer is reporting an auto accident and asked for next steps. Policy number AUT-490772 was not found in the system. Please verify the policy number, confirm coverage, and assist with claim intake guidance."
+insurance-email-023,Travel policy for my son,"Hello, I bought a family travel policy and I am not sure whether my 16-year-old son is covered for the whole trip. Policy TRV-218344. Please confirm.",travel,policy_information,medium,TRV-218344,,escalate_to_human,"Policy record only confirms the travel policy is active; it does not provide dependent eligibility or coverage details for the son, so a safe answer cannot be given.",,Customer asks whether their 16-year-old son is covered for the whole trip under travel policy TRV-218344. The policy record only shows the policy is active; please verify dependent/age coverage terms and respond with the applicable policy wording.
+insurance-email-024,Incorrect premium amount,"Dear support, my latest auto insurance payment request shows a different amount than my last statement. Policy AUT-603991. Could you explain the difference? I don't think I changed anything.",auto,payment_information,medium,AUT-603991,,reply_to_client,Policy found and the request is a straightforward explanation of a billing difference; record indicates current payment processing is pending for the term.,"Dear Customer,
+
+Thank you for reaching out. For policy AUT-603991, your current term’s payment is still being processed, which can cause the amount shown on a new payment request to differ from the amount on your last statement.
+
+Please review the latest payment request details and your prior statement side by side to compare the amounts shown for the current term. If you would like, I can also help you understand the line items shown on your payment request.
+
+Best regards,
+Customer Support",
+insurance-email-025,Claim status please,"Hi, I filed a home claim after my ceiling started leaking. Claim number HCL-119804. Can you tell me if someone has been assigned yet? I haven't received any calls.",home,claim_status,medium,,HCL-119804,reply_to_client,Claim record found and status can be shared safely from the record.,"Subject: Re: Claim status please
+
+Hello,
+
+Thank you for reaching out. I can confirm that your home claim HCL-119804 is currently in assessment in progress for the reported property damage.
+
+If you have not yet received a call, please continue to monitor your phone and email for updates from the assigned team. If anything changes with your contact information, please let us know.
+
+Best regards,
+Claims Support",
+insurance-email-026,Need to change my cover start date,"Hello, I need to move the start date of my travel insurance by one week because my departure changed. Policy TRV-477201. Please let me know if that is possible.",travel,policy_change,medium,TRV-477201,,escalate_to_human,"Policy is cancelled, so a cover start date change cannot be answered safely without human review.",,Customer requests moving the travel policy start date by one week for policy TRV-477201. The policy record shows it is cancelled; please verify whether any date change is possible or whether the customer needs an alternative resolution.
+insurance-email-027,Damage to side mirror,"Good morning, my car's side mirror was broken in a parking lot. I want to open a claim under policy AUT-115933. The car is still drivable.",auto,claim_opening,high,AUT-115933,,escalate_to_human,"Policy found but it is expired, so the claim-opening request cannot be answered safely without human review.",,Customer requests claim opening for auto policy AUT-115933. Policy record shows the policy is expired before the latest request. Please verify coverage/eligibility and advise the customer on next steps.
+insurance-email-028,Policy wording request,"Dear all, could you send me the full wording for my home insurance policy? Number HMO-551809. I need to check the escape of water section.",home,document_request,medium,HMO-551809,,reply_to_client,"Policy record found and the request is for policy wording; the only relevant fact needed is that the policy exists and is cancelled. We can respond with a safe, general instruction to request a copy of the wording through the usual service channel without stating unavailable terms.","Dear Customer,
+
+Thank you for your email.
+
+We have located your home insurance policy, policy number HMO-551809. Please contact our customer service team to request a copy of the full policy wording, including the escape of water section.
+
+If you need help with anything else, please let us know.
+
+Kind regards,
+Customer Service",
+insurance-email-029,Refund after cancellation,"Hello, I cancelled my travel policy a few days ago but have not seen the refund yet. Policy TRV-229601. Can you tell me when it will be processed?",travel,payment_information,medium,TRV-229601,,reply_to_client,Policy record found and contains sufficient information to answer the status question safely.,"Hello,
+
+Thank you for your message. I checked policy TRV-229601, and the current status is payment pending. The record shows that the premium payment is awaiting confirmation.
+
+If you recently cancelled the policy and are expecting a refund, you may wish to allow additional time for the cancellation and payment records to update. If you do not see any change after a few business days, please reply with any cancellation confirmation you received so we can review it further.
+
+Kind regards,",
+insurance-email-030,Urgent: claim not progressing,"Hi, this is taking way too long. My auto claim CLM-771044 was opened nearly two weeks ago and I still don't know what's happening. Please respond today if possible.",auto,claim_status,high,,CLM-771044,reply_to_client,Claim record found and status is sufficient to answer with a safe status update.,"Subject: Re: Urgent: claim not progressing
+
+Hello,
+
+Thank you for your message. I checked your claim CLM-771044 and it is currently waiting for documents. A requested repair report is still missing from the claim file.
+
+Once the required document is received, the claim can continue moving forward. If you have already submitted the repair report, please allow some time for it to be added to the file.
+
+If you can send the report as soon as possible, that should help avoid further delay.
+
+Best regards,
+Claims Team",
+insurance-email-031,Change beneficiary on policy,"Dear team, I would like to update the beneficiary contact on my home insurance records. Policy HMO-404512. Please tell me the next step, as I can't find the form.",home,policy_change,medium,HMO-404512,,reply_to_client,"Policy record found and active; customer asks for next steps for a beneficiary contact update, which can be handled without changing the policy.","Dear Customer,
+
+Thank you for your email. We found your active home insurance policy, HMO-404512.
+
+To update the beneficiary contact details, please reply with the new contact information you would like us to add. If you have a preferred form for this request, we can help point you in the right direction once we have the updated details.
+
+If you would like, you can also include:
+- Full name of the new beneficiary contact
+- Relationship to the policyholder
+- Phone number and/or email address
+
+Once we receive the details, we will advise you on the next step.
+
+Kind regards,
+Customer Service",
+insurance-email-032,Travel medical issue,"Hello, while abroad I had to visit a clinic after twisting my ankle. I believe my travel insurance may cover this. Policy TRV-875390. What documents do you need from the doctor?",travel,document_request,medium,TRV-875390,,reply_to_client,"Policy record found and the request is a general document question; safe to respond without adjudicating coverage. Policy status indicates a pending payment is blocking confirmation, which can be mentioned cautiously as an account-status note.","Subject: Re: Travel medical issue
+
+Hello,
+
+Thank you for your message. For a travel medical claim related to a clinic visit, please ask the doctor or clinic to provide:
+
+- A medical report or consultation note describing the injury or illness
+- The date of treatment
+- The diagnosis and any treatment provided
+- Itemized invoices or receipts showing the amount charged and proof of payment if available
+- Any prescription details, if medication was prescribed
+
+Please also keep copies of any travel-related documents, such as your itinerary or proof of travel, in case they are requested.
+
+I can also note that your policy currently has a pending payment status, which may need to be resolved before any confirmation can be completed.
+
+If you’d like, you can send the documents once you have them and we can review the next steps.
+
+Kind regards,
+Insurance Support",
+insurance-email-033,Need help with direct debit,"Hi, my auto insurance direct debit date is not suitable anymore. Policy AUT-220507. Can you change it to the 15th of each month? Thanks.",auto,policy_change,medium,AUT-220507,,escalate_to_human,"Policy found, but the request is a billing/direct debit change and the record shows renewal payment pending confirmation, which requires human review before any change is made.",,"Customer requests a direct debit date change for auto policy AUT-220507. Policy is found, but renewal payment is pending confirmation. Please verify whether the payment status affects any direct debit amendment and respond to the customer accordingly."
+insurance-email-034,Water damage claim,"Good afternoon, a pipe burst under my kitchen sink and there is water damage to the cabinets. I want to start a home claim. Policy HMO-993210.",home,claim_opening,high,HMO-993210,,reply_to_client,"Policy was found and is active; the customer is requesting to start a home claim, which can be handled without additional claim record lookup.","Subject: Re: Water damage claim
+
+Good afternoon,
+
+Thank you for contacting us. I can confirm that your home policy is active.
+
+I’m sorry to hear about the water damage from the pipe burst under your kitchen sink. To begin the claim process, please reply with a brief description of the damage, the date it occurred, and any photos or other documentation you may have. If any immediate steps were taken to prevent further damage, please include those as well.
+
+Once we receive the details, we can help you move forward with your claim.
+
+Best regards,
+Customer Service",
+insurance-email-035,Can I pay by bank transfer?,"Hello, I usually pay for my travel insurance by card, but this month I would rather use bank transfer. Policy TRV-300118. Is that allowed?",travel,payment_information,medium,TRV-300118,,escalate_to_human,"Policy record was found, but the available data does not include payment method rules, so the request cannot be answered safely and completely.",,Please verify the policy’s accepted payment methods for TRV-300118 and advise the customer whether bank transfer is allowed.
+insurance-email-036,Documents for car claim,"Dear claims team, I have the police report and repair estimate for claim AUT-667901. Where should I send them? I already submitted the initial notice.",auto,document_submission,medium,,AUT-667901,reply_to_client,Claim record found and the request is a straightforward document-submission routing question; no sensitive decision is needed.,"Dear Customer,
+
+Thank you for reaching out. For claim AUT-667901, please send the police report and repair estimate by replying to this email and attaching the documents, or upload them through your claim portal if that option is available to you.
+
+Please include the claim number in your message or upload so the documents can be matched to your file. If you have any trouble submitting them, let us know and we will help.
+
+Kind regards,
+Claims Team",
+insurance-email-037,Policy certificate needed today,"Hi, I need my home insurance certificate urgently for my landlord. Policy HMO-188230. Please send it as soon as you can.",home,document_request,high,HMO-188230,,reply_to_client,Policy record found and contains sufficient information to answer the certificate request safely.,"Subject: Re: Policy certificate needed today
+
+Hello,
+
+I checked policy HMO-188230 and found that it is cancelled and no longer valid. Because of this, we are unable to provide a valid insurance certificate for this policy.
+
+If you need help with anything else, please let us know.
+
+Kind regards,
+Insurance Support",
+insurance-email-038,Wrong vehicle registration,"Hello, I noticed the registration number on my auto policy is wrong. Policy AUT-775310. The correct plate should be FJ12 KLM, not the one listed.",auto,policy_change,medium,AUT-775310,,escalate_to_human,"Customer requests a policy change to correct vehicle registration details; the policy record confirms the policy exists and is active, but the provided data does not include the current registration value or authority to make the change safely.",,Please verify the policyholder identity and update the vehicle registration on policy AUT-775310 from the currently listed plate to FJ12 KLM if appropriate. Current plate value is not provided in the record.
+insurance-email-039,Trip cancellation question,"Dear support, my holiday may be cancelled because of a family emergency. If that happens, can I claim on my travel insurance? Policy TRV-611004. I am not sure yet.",travel,policy_information,medium,TRV-611004,,escalate_to_human,"Policy number provided, but the policy record was not found, so I cannot safely answer coverage questions.",,Customer is asking whether trip cancellation due to a family emergency would be covered under policy TRV-611004. Policy lookup returned not found. Please verify the policy number or locate the correct policy before responding.
+insurance-email-040,Home claim estimate,"Hi, I have a home claim for a broken window after a break-in. Claim HCL-778811. Has the repair estimate been approved? I need to arrange the work soon.",home,claim_status,high,,HCL-778811,reply_to_client,Claim record found and status information is sufficient to answer the customer’s question safely.,"Subject: Re: Home claim estimate
+
+Hello,
+
+Thank you for your message. I checked claim HCL-778811, and the approved handling steps are complete and payment processing is underway.
+
+If you need to arrange the repair work soon, you may wish to proceed based on that status. If you have any additional documents or questions about the claim, please let us know.
+
+Kind regards,
+Insurance Support",
+insurance-email-041,Need to speak to someone,"Hello, I have been trying to reach your team about my car insurance but keep getting stuck in the automated phone system. Policy AUT-118776. Please call me back.",auto,other,medium,AUT-118776,,reply_to_client,Policy record found and the request is a callback request with no disputed coverage or claim issue; safe to respond with the verified policy status and advise on next steps.,"Subject: Re: Need to speak to someone
+
+Hello,
+
+Thank you for reaching out. I was able to locate policy AUT-118776, and it is currently cancelled and no longer active.
+
+If you would like to discuss this policy or review available options, please reply to this email and we can help direct your request to the appropriate team.
+
+Kind regards,
+Customer Care",
+insurance-email-042,Travel insurance for ski trip,"Good morning, does my travel policy include winter sports? I am going skiing next month. Policy TRV-904512. If not, how do I add it?",travel,policy_information,medium,TRV-904512,,escalate_to_human,"Policy record found but it is cancelled; the customer is asking about coverage and adding winter sports, which requires human verification and likely explanation of current policy status/options.",,Policy TRV-904512 is cancelled in the system. Please verify whether the customer has an active replacement policy or if they need guidance on reinstatement/new coverage and winter sports eligibility before responding.
+insurance-email-043,Claim payment question,"Dear team, I received the settlement for my auto claim but I do not understand how it was calculated. Claim number CLM-559870. Could you break it down for me?",auto,claim_status,medium,,CLM-559870,escalate_to_human,"Claim record was not found for the provided claim number, so the payment calculation cannot be explained safely.",,"Customer is asking for a breakdown of a settlement for claim CLM-559870. The claim lookup returned not found, so please verify the claim number and locate the correct claim record before responding."
+insurance-email-044,Update my email address,"Hi, please change the email on file for my home insurance account to a new one. Policy HMO-620194. I will use this address from now on.",home,policy_change,medium,HMO-620194,,escalate_to_human,"Policy identified, but the customer is requesting a policy change that cannot be completed from the email alone and requires verification before updating contact information.",,Customer requests an email address change for active home policy HMO-620194. Please verify identity and update the policy contact email if authorized.
+insurance-email-045,Late premium notice,"Hello, I received a late payment notice for my travel policy, but I already paid it last week. Policy TRV-407731. Can you check this please?",travel,payment_information,medium,TRV-407731,,reply_to_client,Policy record found and contains enough information to explain the late notice safely.,"Dear Customer,
+
+Thank you for your message regarding policy TRV-407731.
+
+I checked the policy record, and the renewal payment is currently marked as pending processing. If you made the payment last week, it may still be clearing through the payment system.
+
+Please allow a little more time for the payment to be fully processed. If the notice remains after that, please contact us again so we can review it further.
+
+Kind regards,
+Customer Service",
+insurance-email-046,Claim for stolen luggage,"Good evening, I returned from a trip and my suitcase was stolen at the airport. I need to open a claim. Travel policy TRV-992103. I have the incident reference.",travel,claim_opening,high,TRV-992103,,reply_to_client,"Policy TRV-992103 was found and is active travel cover, sufficient to acknowledge the request and explain next steps for opening a claim.","Subject: Re: Claim for stolen luggage
+
+Good evening,
+
+Thank you for contacting us. We can confirm that your travel policy TRV-992103 is active.
+
+To open a claim for the stolen suitcase, please reply with the incident reference and any supporting details you have, such as:
+- the date and time of the incident
+- the airport location
+- a brief description of what was stolen
+- any police or airport report details, if available
+- proof of purchase for the luggage and/or contents, if available
+
+Once we receive the incident reference and supporting information, we can help with the next steps.
+
+Kind regards,
+Customer Service",
+insurance-email-047,Home insurance for basement room,"Dear insurer, I rent out a room in my basement sometimes. Does my current home policy cover this situation? Policy HMO-311905. I am not sure if I need to tell you.",home,policy_information,medium,HMO-311905,,reply_to_client,Policy record found and the question can be answered safely at a high level using the available policy status.,"Dear Customer,
+
+Thank you for your email. I checked policy HMO-311905 and it is currently expired and requires renewal.
+
+Because the policy is not active, I’m not able to confirm coverage for renting out a basement room under this policy as it stands. If you would like, please renew the policy and then review the arrangement with us so we can confirm whether any updates or additional details are needed.
+
+Kind regards,
+Customer Service",
+insurance-email-048,Need a copy of my last statement,"Hello, can you send me the last statement for my auto policy? Number AUT-500889. I need it for my files.",auto,document_request,low,AUT-500889,,reply_to_client,Policy was found and the request is a straightforward document inquiry; sufficient information is available to respond safely without internal escalation.,"Subject: Re: Need a copy of my last statement
+
+Hello,
+
+Thank you for your request. We found your auto policy, AUT-500889. Your policy is currently cancelled, and it was cancelled after the last billing cycle.
+
+If you would like a copy of your last statement for your records, please let us know and we can help direct you to the appropriate next step.
+
+Best regards,
+Insurance Services",
+insurance-email-049,Claim still under review,"Hi, my home claim CLM-845221 has been listed as under review for several days. Is there anything missing from my side? I uploaded the pictures already.",home,claim_status,medium,,CLM-845221,reply_to_client,Claim record found and status details are sufficient to answer the customer’s question safely.,"Subject: Re: Claim still under review
+
+Hello,
+
+Thank you for reaching out. I checked claim CLM-845221, and the record shows that it has already been closed after handling was completed.
+
+If you believe there is still an outstanding issue or you need help understanding the outcome, please reply with the details and we can look into it further.
+
+Best regards,
+Claims Support",
+insurance-email-050,Travel insurance for extra days,"Dear team, my trip got extended by three days and I want to make sure the travel cover still applies. Policy TRV-254811. Please confirm.",travel,policy_information,medium,TRV-254811,,reply_to_client,Policy found and active; the customer is asking a straightforward policy-information question that can be answered from the record.,"Dear Customer,
+
+Thank you for your email. I can confirm that policy TRV-254811 is active and travel cover is on file.
+
+If your trip has been extended by three days, please review your policy terms to confirm whether the additional days are covered under your current travel insurance arrangement.
+
+If you need any further assistance, please let us know.
+
+Kind regards,
+Customer Service",
+insurance-email-051,Broken windshield claim,"Hello, a rock hit my windshield on the highway and it cracked badly. I need to file an auto claim. Policy AUT-739105. Is this covered with my excess?",auto,claim_opening,high,AUT-739105,,escalate_to_human,Policy found but is expired; coverage and excess questions for this claim-opening request require manual review.,,Customer wants to open an auto claim for windshield damage and asks whether it is covered with their excess. Policy AUT-739105 was found but is expired. Please verify whether any post-expiry coverage applies and advise the customer on next steps for claim filing.
+insurance-email-052,Need change in occupants,"Hi, two people moved out of my home and one moved in. Do I need to tell you for my home insurance? Policy HMO-908112. I don't want any problems later.",home,policy_change,medium,HMO-908112,,reply_to_client,Policy record found and the customer is asking a general policy-change question that can be answered safely without making any coverage commitments.,"Subject: Re: Need change in occupants
+
+Hello,
+
+Thank you for your message. If the people living in your home have changed, it is important to let us know about the updated occupants as soon as possible. Changes in who lives at the property can affect your policy details, so reporting it helps keep your information accurate and avoids issues later.
+
+Please reply with the names of the people who moved out and the new occupant who moved in, and we’ll help update your records.
+
+Kind regards,
+Customer Care",
+insurance-email-053,Travel claim receipt sent,"Good day, I sent the taxi receipts for claim TRC-440918 but I am not sure if they arrived. Could you confirm receipt? Thanks.",travel,document_submission,medium,,TRC-440918,reply_to_client,Claim record found and the customer only asks to confirm receipt/status of submitted documents; no sensitive decision is required.,"Subject: Re: Travel claim receipt sent
+
+Good day,
+
+Thank you for your email. I can confirm that claim TRC-440918 is on record and is currently under assessment.
+
+Please note that I’m unable to confirm the status of specific document deliveries from here, but your claim is active and being reviewed. If any additional information is needed, you will be contacted.
+
+Kind regards,
+Customer Support",
+insurance-email-054,Auto insurance renewal query,"Dear support, my auto renewal is coming up soon and I want to know if the premium can be paid monthly instead of all at once. Policy AUT-992450.",auto,payment_information,medium,AUT-992450,,escalate_to_human,"Policy lookup failed for the provided policy number, so the premium payment options cannot be verified safely.",,Customer asks whether auto renewal premium can be paid monthly instead of annually for policy AUT-992450. Policy record was not found; please verify the policy number and confirm available payment frequency options before responding.
+insurance-email-055,Need proof of no claims,"Hello, I am switching cars and need proof of no claims for my current policy. AUT-314208. Could you send the document by email?",auto,document_request,medium,AUT-314208,,escalate_to_human,"Policy found, but status indicates payment pending and the request is for proof of no claims, which may require manual verification before issuing any document.",,Customer requests proof of no claims for auto policy AUT-314208. Policy is found but status is payment_pending; please verify eligibility and whether the requested document can be issued by email.
+insurance-email-056,Home claim for electrical fault,"Hi, there was an electrical fault in my living room and the lights stopped working. I am not sure if this is a claim or just a question. Policy HMO-113490. Please advise.",home,claim_opening,medium,HMO-113490,,escalate_to_human,"Customer is unsure whether this is a claim or a question, and the email requests advice on a potentially claim-related home electrical issue. Policy record found, but the case requires human review before responding safely.",,"Policy HMO-113490 was found and is marked payment_pending. Customer reports an electrical fault in the living room and is unsure whether to open a claim. Please review the situation, confirm coverage guidance, and advise whether a claim should be opened."
+insurance-email-057,Travel policy not showing,"Good morning, I bought travel insurance online but I can't find the policy in my account. I only have the reference TRV-880261. Can you help?",travel,policy_information,medium,TRV-880261,,reply_to_client,Policy record found and the customer asked for basic policy information; the record is active and sufficient to respond safely.,"Subject: Re: Travel policy not showing
+
+Good morning,
+
+Thanks for your message. I checked the reference TRV-880261, and the travel policy is active and remains in force for the travel period.
+
+If you still cannot see it in your account, please try signing out and back in, and confirm that you are using the same account details used when the policy was purchased. If the policy still does not appear, please reply with any additional account details you believe may be linked to the purchase so we can look into it further.
+
+Kind regards,
+Customer Service",
+insurance-email-058,Please check my claim number,"Dear team, I think I wrote my claim number incorrectly on the form. It should be CLM-220774, or maybe CLM-220775. Could you check which one is active?",unknown,claim_status,medium,,CLM-220774,reply_to_client,"The provided claim number was found and the alternate claim number was not found, so the client’s question can be answered safely with the record result.","Dear Customer,
+
+Thank you for your message. I checked the claim number you provided, CLM-220774, and it is active. The current status is assessment in progress, which means the damage information is being reviewed.
+
+I also checked CLM-220775, and no claim was found under that number.
+
+If you intended to reference a different claim, please send the correct claim number and we will be happy to look into it.
+
+Kind regards,
+Customer Care",
+insurance-email-059,Change vehicle on policy,"Hi, I sold my old car and bought another one. I need to change the vehicle details on policy AUT-644901. Please tell me what information you require.",auto,policy_change,medium,AUT-644901,,reply_to_client,"Policy found and active; the customer is asking for the information needed to update vehicle details, which can be answered generally without modifying the policy.","Subject: Re: Change vehicle on policy
+
+Hello,
+
+Thank you for reaching out. We can help update the vehicle on your auto policy, and your policy is currently active.
+
+To begin the change, please reply with the following details for the new vehicle:
+- Year, make, model, and trim
+- Vehicle identification number (VIN)
+- Current mileage
+- Date you acquired the vehicle
+- Whether the vehicle is financed or leased
+- Any changes to how the vehicle will be used (for example, commute, business, or pleasure)
+
+If you also have proof of purchase or registration information available, please include that as well.
+
+Once we receive the details, we can review the requested update and let you know the next steps.
+
+Best regards,
+Customer Service",
+insurance-email-060,Holiday cancellation evidence,"Hello, I had to cancel my trip due to a last-minute medical issue. I need to send proof for my travel claim. Policy TRV-715309. Where should I upload the doctor note?",travel,document_submission,high,TRV-715309,,escalate_to_human,"Customer requests document submission guidance, but the case is marked for human review and the policy is expired; safest response is escalation.",,"Customer wants to upload medical evidence for travel claim under policy TRV-715309. Policy found but status is expired. Please verify whether a claim exists, confirm the correct upload channel for supporting documents, and advise the customer accordingly."
+insurance-email-061,Home policy renewal question,"Dear insurance company, my home policy is due soon and I want to know if I can keep the same cover without increasing the sum insured. Policy HMO-470128.",home,policy_information,medium,HMO-470128,,reply_to_client,Policy record found and the question can be answered at a high level without making unsupported commitments.,"Dear Customer,
+
+Thank you for your email regarding policy HMO-470128.
+
+We can confirm that your home policy is currently active and available for service. If you would like to keep the same cover when your renewal is due, you may be able to do so, subject to the terms and conditions of your policy and any renewal options available at that time.
+
+Please note that any change to your sum insured or cover will depend on the renewal terms applicable to your policy. If you would like to review your renewal options in more detail, please contact us with your renewal documents or preferred changes, and we will be happy to help.
+
+Kind regards,
+Insurance Customer Service",
+insurance-email-062,Claim call back request,"Hi, I opened a claim for damage to my garage door after strong wind. Claim HCL-900517. Could someone call me back? I missed a message from your team.",home,claim_status,medium,,HCL-900517,reply_to_client,Claim record found and status can be safely shared at a high level; request is for a callback after a missed message.,"Hello,
+
+Thank you for your message. I can confirm that claim HCL-900517 is closed and retained for reference.
+
+If you would still like someone to call you back, please reply with the best phone number and a convenient time to reach you, and we will pass that along to the appropriate team.
+
+Kind regards,
+Customer Care",
+insurance-email-063,Travel cover for electronics,"Hello, does my travel insurance cover my laptop if it is damaged on the trip? Policy TRV-622847. I may take it with me for work.",travel,policy_information,medium,TRV-622847,,escalate_to_human,"The policy record only confirms the travel policy is active; it does not provide coverage details for laptops or work-related personal electronics, so a safe answer cannot be given without reviewing the policy wording.",,"Please verify the travel policy wording for coverage of personal electronics, including laptops taken for work, and confirm any relevant exclusions, limits, or conditions before responding."
+insurance-email-064,Payment schedule needed,"Good afternoon, I would like to change my auto insurance payments from annual to quarterly. Policy AUT-107664. Is that possible for my account?",auto,policy_change,medium,AUT-107664,,escalate_to_human,"Policy found, but payment verification is pending and the customer is requesting a billing schedule change that should be reviewed by a human.",,Policy AUT-107664 is in payment_pending status. Customer asked to change auto payment frequency from annual to quarterly. Please verify whether the account is eligible for a payment schedule change and advise the customer accordingly.
+insurance-email-065,Claim estimate too low,"Dear claims team, I do not agree with the repair estimate for my car claim CLM-551933. It seems much too low compared with the garage quote I received.",auto,complaint,high,,CLM-551933,escalate_to_human,"Customer disputes a repair estimate on an active claim, which is a complaint and contested decision requiring manual review; claim record shows payment processing has started.",,"Customer contests the repair estimate for claim CLM-551933 and says it is lower than a garage quote. Claim record shows payment processing has started. Please review the estimate, compare with the customer’s supporting quote, and respond to the customer."
+insurance-email-066,Need house inventory advice,"Hello, I am updating my home contents list and want to know if I should send it to you. Policy HMO-276501. Not sure if it is needed.",home,document_submission,medium,HMO-276501,,escalate_to_human,"Policy number provided but the policy record was not found, so I cannot safely advise on whether the contents list should be sent.",,Customer asks whether to send a home contents inventory for policy HMO-276501. Policy lookup returned not found. Please verify the policy number/coverage and advise the customer whether the document is needed.
+insurance-email-067,Travel insurance extension,"Hi, I may stay abroad longer than expected and need to extend my travel policy by one more week. Policy TRV-119803. Can this be done?",travel,policy_change,medium,TRV-119803,,escalate_to_human,"Policy found but it is expired, so the requested extension cannot be handled safely without human review of options and eligibility.",,"Customer requests a one-week extension for travel policy TRV-119803. Policy record shows it is expired before the trip change request. Please verify whether any exception, reinstatement, or alternative coverage option is available and respond to the customer."
+insurance-email-068,Auto claim after hailstorm,"Good day, my car got dented during a hailstorm last night. I want to report the damage. Policy AUT-832114. There are several dents on the roof and hood.",auto,claim_opening,high,AUT-832114,,reply_to_client,Policy was found and the customer is asking to report auto hail damage; we can acknowledge the report and direct them to the claims process without making any coverage or payment commitments.,"Subject: Re: Auto claim after hailstorm
+
+Good day,
+
+Thank you for contacting us to report the hail damage to your vehicle. We have located your auto policy, and it is currently expired and needs renewal for further use.
+
+Please send us any additional details you have about the damage, including the date and time of the hailstorm, the vehicle information, and any photos of the dents on the roof and hood. If you would like to proceed, please also confirm your preferred contact number so the next steps can be coordinated.
+
+Kind regards,
+Claims Support",
+insurance-email-069,Need confirmation of cover,"Hello, I am about to rent a car on holiday and want to know if my travel policy includes rental excess cover. Policy TRV-500271. Please confirm.",travel,policy_information,medium,TRV-500271,,escalate_to_human,"Policy record was found, but the available details do not state whether rental excess cover is included, so the request cannot be answered completely and safely from the record provided.",,Please verify the travel policy TRV-500271 for rental excess cover and respond to the customer with the correct coverage confirmation.
+insurance-email-070,Policy questions about vacant home,"Dear team, my house will be empty for about two months while I work overseas. Does my home policy still cover it? Policy HMO-883190. I can give more details if needed.",home,policy_information,medium,HMO-883190,,reply_to_client,Policy record found and the question can be answered safely from the record: the policy is expired and awaiting renewal if needed.,"Dear Customer,
+
+Thank you for your email regarding policy HMO-883190.
+
+Our records show that this home policy is currently expired and is awaiting renewal if needed. Because of that, it is not currently active.
+
+If you would like to discuss renewing the policy or need help with next steps, please let us know and we will be happy to assist.
+
+Kind regards,
+Customer Service",
+insurance-email-071,Claim progress after inspection,"Hi, an inspector visited my apartment for claim CLM-774205 last week. Can you tell me what the next step is? I have not heard anything since then.",home,claim_status,medium,,CLM-774205,reply_to_client,Claim record found and status is sufficient to answer the customer’s process question.,"Subject: Re: Claim progress after inspection
+
+Hello,
+
+Thank you for your message. I checked claim CLM-774205, and the claim assessment is currently in progress with the existing documents.
+
+The next step is for the assessment to continue. Once it is complete, you should receive an update on the outcome or any additional information needed.
+
+If you have any new documents or information you would like us to consider, you can send them in reply to this message.
+
+Best regards,
+Customer Service",
+insurance-email-072,Update payment card,"Hello, my card expired and I need to update the payment details for my auto insurance. Policy AUT-690123. Please let me know how to do this.",auto,policy_change,medium,AUT-690123,,reply_to_client,"Policy found and the request is a routine payment method update; the record shows only that premium payment is pending verification, with no conflicting information requiring escalation.","Subject: Re: Update payment card
+
+Hello,
+
+Thank you for reaching out. I can help with updating your payment details for policy AUT-690123.
+
+Please contact our billing or policy services team with your new card information so they can update your payment method securely. If you have access to your online account, you may also be able to review or update your payment details there.
+
+For your reference, your policy currently shows a payment pending verification status.
+
+If you would like, I can also help with the next steps for submitting the update.
+
+Best regards,
+Customer Service",
+insurance-email-073,Travel policy for business trip,"Dear support, I bought travel insurance for a leisure trip, but now the trip is for business instead. Is my policy still valid? Reference TRV-221608.",travel,policy_information,medium,TRV-221608,,reply_to_client,Policy record found and the customer asks a general policy-information question that can be answered from the record.,"Dear Customer,
+
+Thank you for reaching out. I found your travel policy reference TRV-221608, and the policy is currently active.
+
+The record indicates that coverage remains active for travel use. If your trip purpose has changed from leisure to business, you may want to review your policy documents or contact us to confirm whether that change affects your coverage details.
+
+Kind regards,
+Support Team",
+insurance-email-074,Broken pipe and ceiling stain,"Hi, I found water stains on my ceiling after a pipe problem upstairs. I want to start a home claim if possible. Policy HMO-415902.",home,claim_opening,high,HMO-415902,,escalate_to_human,"Policy was found, but the record shows payment verification is still outstanding, so the request to open a home claim should be reviewed by a human before proceeding.",,"Customer wants to open a home claim for water damage. Policy HMO-415902 is found, but payment verification is still outstanding. Please verify policy eligibility/status and advise on next steps for claim initiation."
+insurance-email-075,Request for duplicate letter,"Hello, I need a duplicate letter showing my auto insurance is active. Policy AUT-333801. Could you send it by email today?",auto,document_request,high,AUT-333801,,reply_to_client,"Policy AUT-333801 was found and is active, so a duplicate active-status letter can be requested without escalation.","Subject: Re: Request for duplicate letter
+
+Hello,
+
+Thank you for your email. We can help with a duplicate letter confirming that your auto policy is active.
+
+Policy AUT-333801 is active and in good standing.
+
+Please let us know if you would like us to send the letter to the email address we have on file.
+
+Kind regards,
+Customer Service",
+insurance-email-076,Claim number missing from email,"Dear team, I got an email about my travel claim but the claim number was blank. I think it relates to my luggage delay. Policy TRV-704119. Can you resend it?",travel,document_request,medium,TRV-704119,,reply_to_client,Policy number provided and verified as active; no claim number is necessary to respond to this document request safely.,"Dear Customer,
+
+Thank you for your email. I can confirm that policy TRV-704119 is active and available for claims.
+
+However, I’m unable to resend or confirm a specific claim email without the claim number or additional claim details. If you have the claim number, please send it to us and we can help further.
+
+Kind regards,
+Customer Support",
+insurance-email-077,Moving to a new garage,"Hi, I changed the place where my car is usually kept overnight. Do I need to tell you for policy AUT-284600? Please advise.",auto,policy_change,medium,AUT-284600,,escalate_to_human,"Policy is found but currently cancelled; the customer is asking about a policy change, so this needs human review before advising next steps.",,Policy AUT-284600 is cancelled in the system. Please verify whether the customer still needs advice on a cancelled policy and determine the appropriate response about changing the overnight garage location.
+insurance-email-078,Home insurance for shared accommodation,"Hello, I now share my flat with two friends and want to know if this affects my home cover. Policy HMO-990174. I just want to be sure.",home,policy_information,medium,HMO-990174,,escalate_to_human,"Policy found, but the email asks whether sharing the flat affects cover; the record only shows a pending premium payment and does not provide coverage terms for shared accommodation.",,Please review policy HMO-990174 and confirm whether living with two friends affects home cover. The record returned only shows that the current premium payment is pending.
+insurance-email-079,Travel claim receipt query,"Good evening, I sent my receipts for a meal reimbursement claim but the amount seems wrong. Claim TRC-331265. Could you check it?",travel,claim_status,high,,TRC-331265,escalate_to_human,Customer is disputing the claim amount and the case is flagged for human review; only limited claim status is available.,,Customer says the meal reimbursement amount seems wrong for travel claim TRC-331265. Claim record shows status under_review and notes that trip evidence is being checked. Please verify the receipt calculation and respond to the customer.
+insurance-email-080,Need policy number confirmation,"Dear team, can you confirm the policy number for my car insurance? I think it is AUT-556988 but I want to make sure I use the right one.",auto,policy_information,low,AUT-556988,,escalate_to_human,"Policy number provided by the customer was not found in the internal record lookup, so confirmation cannot be completed safely.",,"Customer asked to confirm auto policy number AUT-556988, but the policy lookup returned not found. Please verify whether the number is correct or locate the appropriate policy before responding."
+insurance-email-081,Complaint about delayed response,"Hello, I am very unhappy with how long it is taking to get a reply about my home claim. I have written twice already and still no answer. Claim HCL-118620. Please deal with this urgently.",home,complaint,urgent,,HCL-118620,escalate_to_human,"Complaint about delayed response requires human handling; claim record confirms the claim exists and is awaiting documents, but the complaint itself should be addressed by a human operator.",,"Customer is complaining about delayed response on home claim HCL-118620. Claim is found and currently waiting for photos and repair documentation. Please review the communication history, respond to the customer urgently, and advise on any missing documents needed."
+insurance-email-082,Travel policy cancellation fee,"Hi, if I cancel my travel insurance before the start date, is there a fee? Policy TRV-439275. I might not need the trip anymore.",travel,policy_cancellation,medium,TRV-439275,,reply_to_client,"Policy record found and indicates the travel policy is expired prior to the request, so a safe factual response can be provided without assessing cancellation terms.","Subject: Re: Travel policy cancellation fee
+
+Hello,
+
+I checked policy TRV-439275, and it is currently marked as expired. Because the policy expired before your request, the cancellation question would need to be reviewed in that context.
+
+If you would like, please let us know whether you are asking about a new policy purchase or another active travel policy, and we can help further.
+
+Kind regards,
+Customer Service",
+insurance-email-083,Auto policy document correction,"Dear support, the spelling of my surname is incorrect on my auto documents. Policy AUT-720118. Please correct it to the proper spelling.",auto,policy_change,medium,AUT-720118,,escalate_to_human,"Customer is requesting a policy document correction, which requires manual verification and update of personal details.",,Customer says the surname is misspelled on auto policy documents for policy AUT-720118. Policy is active. Please verify the correct legal spelling against supporting documents and update the policy records/documents if appropriate.
+insurance-email-084,Need help after fire alarm incident,"Hello, there was a small electrical fire in my kitchen and the smoke alarm went off. I'm not sure whether this is a claim or just for advice. Home policy HMO-601347.",home,claim_opening,high,HMO-601347,,escalate_to_human,Customer is reporting a potential loss event and the message explicitly requires human review; this should be handled by a human to determine whether a claim should be opened and what next steps are appropriate.,,Customer reports a small electrical fire in the kitchen with smoke alarm activation. Policy HMO-601347 is active. Please review for claim-opening guidance and advise the customer on next steps.
+insurance-email-085,Travel insurance proof for airline,"Good afternoon, the airline asked me to show proof of travel insurance at check-in. Could you send me a certificate for policy TRV-910084? Thanks.",travel,document_request,medium,TRV-910084,,reply_to_client,Policy TRV-910084 was found and is active; the request is a straightforward document request that can be handled safely.,"Subject: Re: Travel insurance proof for airline
+
+Good afternoon,
+
+Thank you for your message. Your travel policy TRV-910084 is active.
+
+If you need a certificate of insurance for airline check-in, please let us know and we can help with the next steps to provide it.
+
+Kind regards,
+Insurance Support",
+insurance-email-086,Auto claim settlement received,"Hi, I received a cheque for my auto claim but I don't understand if it is the final amount. Claim number CLM-665430. Can you confirm?",auto,claim_status,high,,CLM-665430,escalate_to_human,"The email asks whether a received cheque is the final settlement amount, but the claim record only shows the claim is still under review and does not confirm settlement details. This is a contested/high-impact status question and requires human verification.",,"Claim CLM-665430 is under review. Customer is asking whether a received cheque represents the final settlement amount. Please verify the current claim status, any issued payment breakdown, and whether further payments may be pending before responding."
+insurance-email-087,Home contents query,"Dear team, does my home policy cover accidental damage to a television if my child knocks it over? Policy HMO-374901. I am trying to understand the cover.",home,policy_information,medium,HMO-374901,,escalate_to_human,Policy record found but it is cancelled; cover eligibility cannot be answered safely from the available record and requires human review of the cancellation context and applicable cover terms.,,"Please verify the cancelled home policy HMO-374901 and confirm whether the customer has any active cover or if a separate reinstatement/renewal record applies. The customer is asking whether accidental damage to a television is covered, but the retrieved record only shows cancellation."
+insurance-email-088,Travel claim and missing bag tag,"Hello, my checked bag did not arrive and I filed a claim. I have the airline report but lost the bag tag. Claim TRC-558120. Is the tag required?",travel,claim_status,medium,,TRC-558120,reply_to_client,Claim record was found and contains enough status information to answer the customer’s question safely without inventing any policy specifics.,"Subject: Re: Travel claim TRC-558120
+
+Hello,
+
+Thank you for reaching out. We found your claim TRC-558120, and claim review has been completed. Payment processing has started.
+
+Regarding the bag tag: I’m not able to confirm document requirements from the claim record alone. If you need to provide any additional claim documents, please submit them through the usual claims channel and include your airline report and any other supporting paperwork you have.
+
+Kind regards,
+Claims Support",
+insurance-email-089,Change of occupation,"Hi, my job has changed recently and I am wondering if I need to tell you for my car insurance. Policy AUT-449773. Please advise.",auto,policy_change,medium,AUT-449773,,escalate_to_human,"Policy number provided, but the policy record was not found, so we cannot safely advise on the requested change.",,Customer asks whether a job/occupation change must be reported for auto policy AUT-449773. Policy lookup returned not found. Please verify the policy number and confirm the correct policy details before responding.
+insurance-email-090,Need an update on home repair,"Dear claims team, the contractor said he was waiting for approval from you. Claim CLM-904331 for water damage at my home. Can you let me know if it is approved yet?",home,claim_status,medium,,CLM-904331,reply_to_client,Claim record found and status information is sufficient to answer the customer’s request safely without making coverage or approval decisions.,"Dear Customer,
+
+Thank you for your email regarding claim CLM-904331.
+
+I can confirm that the claim is on file and its current status is received. At this time, the record indicates that further information may be requested.
+
+If you have been asked to provide additional documents or details, please send them as soon as possible so the claim can continue to be reviewed.
+
+Kind regards,
+Claims Team",
+insurance-email-091,Travel insurance starting tomorrow,"Hello, I bought travel insurance for a trip leaving tomorrow, but I cannot see the confirmation email. Policy TRV-266509. Please resend it if possible.",travel,document_request,medium,TRV-266509,,reply_to_client,Policy record was found and the request is a straightforward document resend request; no sensitive or contested issue is present. The record details are sufficient to respond safely by confirming we can assist with sending the confirmation and noting the policy status factually.,"Subject: Re: Travel insurance starting tomorrow
+
+Hello,
+
+Thanks for reaching out. We found your travel policy TRV-266509.
+
+Our records show that this policy is expired and is not currently valid.
+
+If you still need a copy of the confirmation email for your records, please let us know and we can help with the next steps.
+
+Kind regards,
+Customer Support",
+insurance-email-092,Auto renewal with new mileage,"Hi, my annual car mileage has gone up and I want to check if that changes my premium. Policy AUT-818270. I can send the new estimate if needed.",auto,policy_change,medium,AUT-818270,,escalate_to_human,"Customer is asking whether a mileage change affects premium, which requires policy-specific underwriting/quote review beyond the available record.",,"Policy AUT-818270 is active. Please verify whether the mileage change can be accommodated, whether a revised premium applies, and what documentation or estimate is needed before responding to the customer."
+insurance-email-093,Home claim due to theft,"Good morning, someone broke into my shed and took tools. I want to report a home contents claim. Policy HMO-567128. I have a list of the missing items.",home,claim_opening,high,HMO-567128,,reply_to_client,Policy was found and the email is a straightforward claim-opening request with sufficient information to direct the customer to the next step.,"Subject: Re: Home claim due to theft
+
+Good morning,
+
+Thank you for contacting us about the theft from your shed. We have located your home policy, and it is currently showing as active with a renewal payment pending processing.
+
+Please send us the list of missing items and any supporting information you have, such as the date and time you discovered the theft, a police report reference if available, and any photos or receipts for the tools. We will then be able to log the claim details for review.
+
+Kind regards,
+Claims Team",
+insurance-email-094,Need help understanding excess,"Dear team, could you explain what excess I would need to pay if I make a claim on my travel insurance? Policy TRV-603410. I am not sure I understand the wording.",travel,policy_information,medium,TRV-603410,,escalate_to_human,"Policy was found but only shows expired status; no excess information is available from the record, so the customer’s question cannot be answered safely.",,Customer asks for excess details on travel policy TRV-603410. The policy record found is expired and contains no excess/coverage wording. Please verify the correct active policy or provide the applicable excess information from the policy documents.
+insurance-email-095,Change name after marriage,"Hello, I got married and need the name on my home policy updated. Policy HMO-822605. Please tell me what documents you need.",home,policy_change,medium,HMO-822605,,escalate_to_human,"Policy number provided but the policy record was not found, so the request cannot be answered safely or completely.",,Customer requests a name change after marriage for home policy HMO-822605. Policy lookup returned not found. Please verify the policy number and advise on the correct update process and required documents if the policy can be located.
+insurance-email-096,Car damage after pothole,"Hi, I hit a deep pothole and now one of my tires and the rim are damaged. Can I claim under my auto policy? Number AUT-190744.",auto,claim_opening,high,AUT-190744,,reply_to_client,Policy found and active; request is a general coverage question that can be answered without making a claim decision.,"Subject: Re: Car damage after pothole
+
+Hello,
+
+Thank you for your email. I can confirm that your auto policy is active and usable.
+
+Whether damage from hitting a pothole is covered depends on the terms of your policy and the type of coverage that applies. If you’d like, I can help you with the next steps for opening a claim or direct you to review your policy documents for coverage details.
+
+If you want to proceed, please let us know and we can assist further.
+
+Best regards,
+Customer Care",
+insurance-email-097,Travel reimbursement for missed connection,"Good day, I missed my connecting flight because the first plane arrived late. I had to buy a new ticket. Policy TRV-773519. Can I claim this?",travel,claim_opening,high,TRV-773519,,reply_to_client,"Policy record found; it is cancelled and no longer in force, so I can safely explain that coverage is unavailable based on the record.","Good day,
+
+Thank you for your message. I reviewed policy TRV-773519, and the record shows that this policy is cancelled and no longer in force.
+
+Because of that, I’m unable to confirm coverage for the missed-connection expense under this policy.
+
+If you would like, you can contact us with any additional policy details or documents for review.
+
+Kind regards,",
+insurance-email-098,Home policy for basement flood,"Dear support, my basement flooded after heavy rain and I want to know whether my policy covers this. Policy HMO-318944. Please advise before I arrange repairs.",home,policy_information,high,HMO-318944,,escalate_to_human,"The email asks for coverage interpretation for a specific flood-related loss, but the policy record returned only basic status information and no coverage terms or exclusions. This requires human review to verify the applicable policy wording before responding.",,"Please review policy HMO-318944 for basement flood / heavy rain coverage, including water damage and flood exclusions, and advise the customer before repairs are arranged."
+insurance-email-099,Claim number and policy confusion,"Hello, I have both a claim number and policy number but I am not sure which one to use for an update request. The claim might be CLM-201995 and the policy is AUT-501337. Sorry for the confusion.",auto,claim_status,medium,AUT-501337,CLM-201995,escalate_to_human,Claim was not found and the email itself indicates confusion about which identifier to use; human review is required to verify the correct claim or advise next steps.,,"Customer provided policy AUT-501337, which is active, but claim CLM-201995 was not found. Please verify whether the claim number is incorrect or missing, and confirm which identifier should be used for the update request."
+insurance-email-100,Can you send proof of insurance?,"Hi, I need proof that my auto insurance is active because I am registering a car this week. Policy AUT-675214. Could you email it to me today?",auto,document_request,high,AUT-675214,,reply_to_client,"Policy AUT-675214 was found and is active, so a proof-of-insurance response can be sent safely using verified policy information.","Subject: Re: Proof of insurance request
+
+Hello,
+
+Thank you for your email. I can confirm that policy AUT-675214 is currently active for auto insurance.
+
+If you need an official proof-of-insurance document, please let us know and we can help with the next steps.
+
+Best regards,
+Insurance Team",
+insurance-email-101,Travel claim for cancelled excursion,"Dear team, I booked an excursion on holiday but it was cancelled by the operator and I lost the money. Does travel insurance cover this? Policy TRV-880512.",travel,policy_information,medium,TRV-880512,,reply_to_client,Policy record found and the request is a general coverage question; the only verified fact is that the policy is expired.,"Dear Customer,
+
+Thank you for your email regarding policy TRV-880512.
+
+We were able to confirm that this travel policy has expired. Based on that record, we cannot assess coverage for the cancelled excursion under the current policy status.
+
+If you would like, please review your policy documents or contact us with an active policy number so we can help further.
+
+Kind regards,
+Customer Service",
+insurance-email-102,Home insurance billing question,"Hello, my home policy payment is normally taken on the 3rd, but this month it came out on the 1st. Policy HMO-144739. Can you explain why?",home,payment_information,medium,HMO-144739,,escalate_to_human,"Policy record was found, but it does not include billing or payment timing details needed to explain the date change safely.",,"Customer asks why a home policy payment moved from the 3rd to the 1st. Policy HMO-144739 is active, but the retrieved record does not include billing schedule or transaction details. Please verify the billing history and explain the date change."
+insurance-email-103,Need to add glass cover,"Hi, I want to add glass cover to my car insurance because my windshield keeps getting chips. Policy AUT-947221. Please let me know the cost.",auto,policy_change,medium,AUT-947221,,escalate_to_human,"Policy found, but the request is a policy change and the record shows outstanding payment verification, so this should be reviewed before advising on coverage changes or cost.",,"Customer wants to add glass cover to auto policy AUT-947221. Policy record is in payment_pending status with payment verification outstanding. Please verify eligibility for coverage changes, confirm whether glass cover can be added, and provide the correct cost/next steps."
+insurance-email-104,Claim follow-up after phone call,"Good afternoon, I spoke to someone last week about claim HCL-700418 for storm damage, and they said I would get an update. I have not received one yet.",home,claim_status,medium,,HCL-700418,reply_to_client,Claim record found and status can be shared safely without making decisions or promises.,"Good afternoon,
+
+Thank you for your follow-up regarding claim HCL-700418. I can confirm that the claim is currently under review pending policy and damage checks.
+
+If you would like, you may reply to this email with any additional information or documentation that may help the review process.
+
+Kind regards,",
+insurance-email-105,Travel policy certificate for employer,"Dear support, my employer needs a copy of my travel insurance certificate for an upcoming work trip. Policy TRV-339801. Please send a PDF if possible.",travel,document_request,medium,TRV-339801,,escalate_to_human,"Policy number provided but the policy record was not found, so the certificate request cannot be fulfilled safely.",,"Customer requests a travel insurance certificate for policy TRV-339801, but the policy record was not found. Please verify the policy number and locate the correct policy before responding or issuing any document."
+insurance-email-106,Policy not found in app,"Hello, I added my home insurance to the app but it does not show any details. Policy HMO-920455. Can you check if everything is linked correctly?",home,policy_information,medium,HMO-920455,,reply_to_client,Policy record found; the issue can be answered safely with the available status information.,"Hello,
+
+I checked policy HMO-920455 and confirmed it is marked as cancelled in our system. If you expected to see active policy details in the app, that would explain why nothing is displaying.
+
+If you believe this is incorrect or if you need help understanding the status shown, please let us know and we can look into it further.
+
+Kind regards,",
+insurance-email-107,Accident report question,"Hi, I had a small bump with another car in a supermarket car park. Do I need to send a police report for my auto claim? Policy AUT-608933. Nobody was hurt.",auto,claim_opening,medium,AUT-608933,,escalate_to_human,"Policy number provided but no matching policy record was found, so I cannot safely answer the claim-opening question from internal records alone.",,Customer is asking whether a police report is needed for an auto claim. Policy AUT-608933 was not found in the system. Please verify the policy number and advise based on the applicable policy terms and claim reporting requirements.
+insurance-email-108,Travel insurance for lost passport,"Good morning, I lost my passport during a trip and had to pay for replacement papers. Is that something I can claim on travel insurance? Policy TRV-452108.",travel,claim_opening,medium,TRV-452108,,reply_to_client,"Policy was found and is active; the customer is asking a general coverage question, which can be answered safely without making any claim decision.","Good morning,
+
+Thank you for your message. Your travel policy is currently active.
+
+For a question like this, whether replacement passport or travel document expenses can be claimed depends on the specific terms, exclusions, and any supporting documents required under your policy. If you would like to make a claim, please send the details of the loss, the date and location of the incident, and copies of any receipts or official reports you have.
+
+If you need help with the next steps, please let us know and we can assist.
+
+Kind regards,",
+insurance-email-109,Home claim pending approval,"Dear claims department, my house claim CLM-996210 has been pending for a week. Can you tell me if any more evidence is needed? I already sent the photos and estimate.",home,claim_status,medium,,CLM-996210,reply_to_client,Claim record found and contains enough information to answer the status inquiry safely.,"Dear Customer,
+
+Thank you for your email regarding claim CLM-996210. Our records show that your claim is currently under review and is awaiting a pending verification step.
+
+At this time, we do not have any additional information indicating that further evidence is needed. We have noted that you have already submitted photos and an estimate.
+
+If anything else is required, you will be contacted directly.
+
+Kind regards,
+Claims Department",
+insurance-email-110,Update bank details,"Hello, my bank account changed and I need to update the payment details for my travel policy. Policy TRV-111904. Please let me know how.",travel,policy_change,medium,TRV-111904,,reply_to_client,"Policy found and the request is a routine payment-details update; the record indicates payment verification is pending, but there is enough information to provide a safe process response without changing the policy.","Subject: Re: Update bank details
+
+Hello,
+
+Thank you for your message. I can help with updating your payment details for policy TRV-111904.
+
+To proceed, please reply with your updated bank account details using a secure channel or follow your usual policy servicing process for payment information updates. Please do not send sensitive banking information by unsecure email.
+
+Please also note that payment verification is currently pending on this policy, so any payment-related update may need to be reviewed before it can take effect.
+
+If you’d like, I can also help you with the next steps for submitting the update securely.
+
+Kind regards,",
+insurance-email-111,Auto policy cover abroad,"Hi, I am taking my car into another country for a few months and want to make sure the auto policy still covers me there. Policy AUT-777209. Thanks.",auto,policy_information,medium,AUT-777209,,reply_to_client,"Policy record found and active; the customer asks for general coverage confirmation abroad, which can be answered with the available policy status only.","Subject: Re: Auto policy cover abroad
+
+Hello,
+
+Thank you for your email. I can confirm that policy AUT-777209 is active and has valid cover dates.
+
+If you are planning to take your car into another country for a few months, please review your policy terms or contact us to confirm whether cover applies in that country and whether any conditions, restrictions, or notifications are required before travel.
+
+Kind regards,
+Customer Service",
+insurance-email-112,Need copy of claim form,"Dear team, could you send me a copy of the claim form I submitted for my home damage case? Claim number CLM-388415. I need it for my records.",home,document_request,medium,,CLM-388415,escalate_to_human,"Claim number was provided, but the claim record was not found, so the request cannot be completed safely.",,Customer requests a copy of the claim form for claim CLM-388415. The claim record was not found in the system; please verify the claim number and locate the correct record before responding.
+insurance-email-113,Travel claim mistake,"Hello, I think I selected the wrong trip dates when I filed my travel claim. Claim TRC-509773. Is it possible to correct this?",travel,document_submission,medium,,TRC-509773,reply_to_client,Claim record found and the request is a straightforward document correction inquiry that can be answered safely without policy changes or claim adjudication.,"Hello,
+
+Thank you for your message. Your travel claim TRC-509773 is currently waiting for receipts and itinerary documents.
+
+If you selected the wrong trip dates, please send the correct trip dates along with any updated supporting travel documents so the claim file can be reviewed and updated as needed.
+
+Best regards,
+Claims Support",
+insurance-email-114,Home insurance and new pets,"Hi, we just got two cats and I am wondering if that affects my home insurance in any way. Policy HMO-663290. Please let me know.",home,policy_information,medium,HMO-663290,,escalate_to_human,"Policy number provided, but the policy record was not found, so the question cannot be answered safely from available information.",,Customer asks whether adding two cats affects home insurance for policy HMO-663290. Policy lookup returned not found. Please verify the policy number and advise on pet-related coverage or underwriting implications.
+insurance-email-115,Car repair approval needed,"Good evening, my garage says they are waiting for approval before repairing my car. Claim CLM-120884. Could you tell me if the repair has been authorized?",auto,claim_status,medium,,CLM-120884,reply_to_client,Claim record found and status is sufficient to answer the authorization question safely.,"Subject: Re: Car repair approval needed
+
+Good evening,
+
+I checked claim CLM-120884. The claim is currently open and waiting for additional documents from the submitter.
+
+At this time, the repair has not been authorized. Please send the requested documents so the claim can continue to be reviewed.
+
+Best regards,
+Customer Service",
+insurance-email-116,Travel cover for winter sports equipment,"Hello, I want to take ski equipment on my trip and I need to know if travel insurance covers damage or loss. Policy TRV-509118.",travel,policy_information,medium,TRV-509118,,reply_to_client,Policy record found for the provided travel policy number; the customer asks a general policy-information question and no claim decision is needed.,"Subject: Re: Travel cover for winter sports equipment
+
+Hello,
+
+Thanks for your email. I can confirm that your travel policy TRV-509118 is on record. 
+
+For questions about whether ski equipment is covered for damage or loss, please refer to your policy wording and any travel or personal belongings section that applies to winter sports equipment. If you would like, I can also help explain the relevant policy wording if you share the section you are looking at.
+
+Kind regards,
+Customer Service",
+insurance-email-117,Please resend renewal notice,"Dear support, I cannot find my home insurance renewal notice anymore. Policy HMO-101773. Could you resend it to me?",home,document_request,medium,HMO-101773,,reply_to_client,"Policy found and active; customer requests a resend of the renewal notice, which can be handled without sensitive or contested issues.","Dear Customer,
+
+Thank you for your message. We found your active home insurance policy HMO-101773.
+
+We can help resend your renewal notice. Please reply and let us know the preferred delivery method, and we will arrange the notice to be sent again.
+
+Kind regards,
+Support Team",
+insurance-email-118,Auto claim from last night,"Hi, another driver hit my parked car last night and drove off. I need to open a claim. Policy AUT-449102. I have the time and place written down.",auto,claim_opening,high,AUT-449102,,reply_to_client,"Policy record found and the email asks to open a claim, but no claim details are needed to provide a safe next-step response. The policy is expired, so the response should direct the customer to renew before reactivation without making claim decisions.","Subject: Re: Auto claim from last night
+
+Hello,
+
+Thank you for contacting us. We found your auto policy ending in AUT-449102, and it is currently expired and would need to be renewed to reactivate coverage.
+
+If you would like to move forward, please contact us with the date, time, and location of the incident, along with any available details about the other driver or witnesses. Once your coverage status is addressed, we can help you with the next steps for your claim.
+
+Sincerely,
+Claims Support",
+insurance-email-119,Question about pre-existing condition,"Hello, I have a medical condition and I am unsure if it affects my travel insurance cover. Policy TRV-670014. Please advise.",travel,policy_information,medium,TRV-670014,,escalate_to_human,"Policy found, but the request is about medical condition coverage and the record only shows payment verification pending; coverage guidance cannot be safely provided from the available information.",,"Please review policy TRV-670014 and advise the customer whether their pre-existing medical condition affects travel coverage. The record currently shows payment verification pending, so confirm whether any coverage guidance can be provided or whether additional verification is required."
+insurance-email-120,Home policy transfer request,"Dear team, I am buying a new house and want to know if my current home policy can be transferred or if I need a new one. Policy HMO-285617.",home,policy_information,medium,HMO-285617,,reply_to_client,Policy found and contains enough information to answer the customer’s question at a high level without making internal promises.,"Dear Customer,
+
+Thank you for your email regarding policy HMO-285617.
+
+We found that your home policy is currently active, with a premium payment pending.
+
+For questions about moving coverage to a new home, please contact us with the new property details so we can review whether a policy update or a new policy may be needed.
+
+Kind regards,
+Customer Service",
+insurance-email-121,Need help with instalments,"Hi, I would like to split my auto premium into monthly instalments instead of paying all at once. Policy AUT-912340. Is there a fee for doing this?",auto,payment_information,medium,AUT-912340,,reply_to_client,Policy found and active; request is a general payment-information question that can be answered safely without additional claim details.,"Subject: Re: Need help with instalments
+
+Hello,
+
+Thanks for reaching out. Your auto policy is active.
+
+If you would like to pay your premium in monthly instalments instead of as a single payment, please contact us and we can review the available payment options for your policy. Any applicable instalment fee, if charged, depends on the payment arrangement set for the policy.
+
+If you would like, we can also help you with the next steps to set up monthly payments.
+
+Kind regards,
+Customer Service",
+insurance-email-122,Travel claim and hotel receipt,"Good day, I submitted my claim for a cancelled flight and hotel stay, but I may have sent the wrong receipt. Claim CLM-555190. Can I replace it?",travel,document_submission,medium,,CLM-555190,reply_to_client,Claim record found and the request is a straightforward document-submission question; no sensitive decision needed.,"Subject: Re: Travel claim and hotel receipt
+
+Good day,
+
+Thank you for your message. Your claim CLM-555190 has been received and is queued for initial checks.
+
+If you sent the wrong receipt, you may submit the corrected document for the claim. Please include your claim number on any replacement document so it can be matched to your file.
+
+Kind regards,
+Claims Team",
+insurance-email-123,Home repair contractor question,"Hello, can I choose my own contractor for the repair on my home claim, or do I have to use someone you assign? Claim HCL-640902.",home,claim_status,medium,,HCL-640902,escalate_to_human,"The customer is asking about repair contractor choice, which depends on claim handling rules not present in the retrieved claim record. The claim was found, but the available information is insufficient to answer safely and completely.",,Customer asks whether they may choose their own contractor for home claim HCL-640902. Claim record only confirms the claim was received and logged; please verify applicable claim/repair assignment rules and respond with the correct contractor guidance.
+insurance-email-124,Auto insurance proof for employer,"Dear insurance team, my employer wants proof that my car is insured for business parking. Policy AUT-305661. Can you send a confirmation letter?",auto,document_request,medium,AUT-305661,,reply_to_client,Policy found and active; request is a straightforward document/confirmation request with sufficient information.,"Dear Customer,
+
+Thank you for your message. I can confirm that policy AUT-305661 is currently active with standard terms.
+
+If you need a formal confirmation letter for your employer regarding business parking, please let us know the preferred recipient name or any specific wording required, and we will help prepare it.
+
+Kind regards,
+Insurance Team",
+insurance-email-125,Travel policy activated?,"Hi, I paid for travel insurance this morning but I am not sure if it is active yet. Reference TRV-847260. I leave tonight, so I need to know.",travel,policy_information,urgent,TRV-847260,,reply_to_client,"Policy record found and clearly shows the travel policy is active, so a safe direct reply is possible.","Subject: Re: Travel policy activated?
+
+Hi,
+
+Thanks for your message. I’ve checked the policy reference TRV-847260, and your travel insurance is active.
+
+If you need anything else before you leave tonight, please let us know.
+
+Best regards,
+Customer Service",
+insurance-email-126,Home claim after burglary,"Hello, my back door was forced open and some jewelry is missing. I want to report a claim under my home policy. HMO-712408. What details do you need?",home,claim_opening,high,HMO-712408,,reply_to_client,"Policy found and active; customer is asking for claim-opening guidance, which can be answered without claim adjudication.","Subject: Re: Home claim after burglary
+
+Hello,
+
+Thank you for contacting us. We’re sorry to hear about the burglary at your property.
+
+Your home policy is active. To help open your claim, please reply with the following details:
+- Date and approximate time the burglary was discovered
+- Date and approximate time the loss occurred, if known
+- A brief description of what happened, including the back door damage and any missing items
+- A list of the missing jewelry and any other property believed to be taken
+- Whether a police report has been filed, and the report number if available
+- Photos of the damage to the back door, if you have them
+- Your preferred contact number and best time to reach you
+
+If there is any immediate safety concern, please contact the police or emergency services first.
+
+Kind regards,
+Claims Team",
+insurance-email-127,Change address after move,"Dear team, I moved and need to update the address on my auto policy too because the parking location changed. Policy AUT-110889. Please tell me the process.",auto,policy_change,medium,AUT-110889,,reply_to_client,Policy found and active; customer is asking for process guidance rather than a disputed or sensitive decision.,"Dear Customer,
+
+Thank you for your email. We can help with updating your auto policy details after a move.
+
+For an address update and parking location change, please reply with the new address and the new regular parking location for the insured vehicle. Once we have that information, we can advise on the next steps to update your policy records.
+
+If you have any supporting documentation for the move, please include it as well.
+
+Kind regards,
+Customer Service",
+insurance-email-128,Travel claim refund status,"Hi, you approved my travel claim a while ago and I still have not received the payment. Claim TRC-204771. Could you check the payout status?",travel,claim_status,high,,TRC-204771,escalate_to_human,"Claim record found, but the customer is asking about payout status while the available record only confirms the claim was received and queued; no safe payout update can be provided.",,Please verify claim TRC-204771 payout/disbursement status and whether any payment has been issued. Current record only shows the claim was received and entered into the queue.
+insurance-email-129,Need a policy summary,"Hello, could you send me a summary of my home cover? I only need a simple overview of what is included. Policy HMO-556712.",home,policy_information,medium,HMO-556712,,reply_to_client,Policy record found and the request is for a simple policy summary; no sensitive or contested issue identified.,"Subject: Re: Need a policy summary
+
+Hello,
+
+Thank you for your email. I can confirm that home cover is active under policy HMO-556712.
+
+Summary:
+- Insurance type: Home
+- Status: Active
+- Coverage detail available on file: Active home cover is on file.
+
+If you would like a fuller copy of your policy wording, please let us know and we can help with that.
+
+Kind regards,
+Customer Service",
+insurance-email-130,Car insurance question after sale,"Hi, I sold my car yesterday and I am not sure what happens to the insurance now. Policy AUT-776401. Do I cancel it or can I move it to a new car?",auto,policy_change,medium,AUT-776401,,reply_to_client,Policy record found and the question can be answered safely from the record status.,"Subject: Re: Car insurance question after sale
+
+Hello,
+
+Thank you for reaching out. I checked policy AUT-776401, and it is already cancelled and closed administratively.
+
+Because the policy is no longer active, it cannot be moved to a new car under this policy. If you need insurance for a replacement vehicle, you will need to arrange a new policy or contact your agent to discuss your options.
+
+If you have any questions about your coverage ending date or next steps, please let us know.
+
+Kind regards,
+Insurance Support",
+insurance-email-131,Claim not visible online,"Good morning, I lodged a claim for roof damage after heavy wind but it does not appear in my account. Claim CLM-330144. Can you check?",home,claim_status,medium,,CLM-330144,reply_to_client,Claim record found and status can be shared safely.,"Good morning,
+
+Thank you for reaching out. I checked claim CLM-330144, and it is currently under review pending confirmation of loss details.
+
+If you have any additional information or documents about the roof damage and the heavy wind event, please send them through your usual claims channel so they can be added to the file.
+
+Kind regards,",
+insurance-email-132,Travel insurance for family visit,"Dear support, I am travelling to visit family and want to know if my travel policy covers a trip with multiple stops. Policy TRV-218900. Thanks.",travel,policy_information,medium,TRV-218900,,reply_to_client,"Policy record found and the request is a general policy-information question. The record indicates the policy is cancelled, so the response should avoid coverage assurances and direct the customer to confirm eligibility with support.","Subject: Re: Travel insurance for family visit
+
+Dear Customer,
+
+Thank you for your email.
+
+We found your travel policy record (TRV-218900). The policy is currently marked as cancelled, so we’re not able to confirm coverage for your planned trip or any trip with multiple stops based on the active policy record.
+
+If you would like, please contact us with any updated policy details or to discuss your options for travel coverage.
+
+Kind regards,
+Support Team",
+insurance-email-133,Need to update marital status,"Hello, my marital status changed and I want to know if I should update my home insurance records. Policy HMO-450918. Please advise.",home,policy_change,medium,HMO-450918,,reply_to_client,"Policy record found and sufficient to answer generally; the policy is expired and not currently in force, so advise the customer to contact support to update records if needed.","Hello,
+
+Thank you for your email. We found your home insurance policy, and it is currently expired and not in force.
+
+If you would like to update your marital status on our records, please contact us with your current policy details so we can advise on the correct next step.
+
+Best regards,
+Customer Service",
+insurance-email-134,Auto claim for broken taillight,"Hi, my taillight was smashed while the car was parked outside my building. I want to open a claim. Policy AUT-633118. There was no note left.",auto,claim_opening,high,AUT-633118,,reply_to_client,"Policy was found and the email requests claim opening; the available record shows the policy is expired, so I can safely inform the client they should contact support for next steps without making claim decisions.","Subject: Re: Auto claim for broken taillight
+
+Hello,
+
+Thank you for reaching out. I’m sorry to hear about the damage to your taillight.
+
+I was able to locate your auto policy, and it is currently expired and no longer in force. Because of that, I’m not able to help open a claim from here.
+
+Please contact us as soon as possible so a representative can review your situation and advise on next steps.
+
+Best regards,
+Insurance Support",
+insurance-email-135,Travel certificate for embassy,"Dear team, the embassy requested a travel insurance certificate for my visa file. Policy TRV-990624. Please send it if you can.",travel,document_request,medium,TRV-990624,,reply_to_client,"Policy found and the request is a standard document request. The policy status shows payment pending for continuation, which can be stated without making promises or decisions.","Dear Customer,
+
+Thank you for your message. We can help with a travel insurance certificate for your visa file.
+
+Your policy TRV-990624 is currently showing as payment pending for policy continuation. Please complete any outstanding payment requirements first, and then we can proceed with the certificate request.
+
+If you would like, you may reply once the payment is completed and we will assist further.
+
+Kind regards,
+Customer Service",
+insurance-email-136,"Home policy question, not sure","Hello, I heard that leaving windows open can affect home insurance. Is that true for my policy? HMO-808553. I am not certain.",home,policy_information,medium,HMO-808553,,escalate_to_human,"Policy number was provided but the policy record was not found, so the question cannot be answered safely from internal records.",,Customer is asking whether open windows affect their home policy. Policy HMO-808553 was not found in the system. Please verify the policy number and advise the customer accordingly.
+insurance-email-137,Claim update after repair quote,"Hi, I uploaded a repair quote for claim CLM-778230 but the portal still says waiting. Can someone confirm if it was received?",auto,claim_status,medium,,CLM-778230,escalate_to_human,"The claim record was found, but the customer is asking about receipt of an uploaded repair quote while the available claim data only shows payment processing status. We cannot safely confirm document receipt from this record.",,"Please verify whether the repair quote for claim CLM-778230 was received in the portal and update the customer accordingly. Current claim status shows payment processing has begun, but it does not confirm document receipt."
+insurance-email-138,Auto direct debit failed again,"Dear support, my auto policy payment failed again even though I changed my card last month. Policy AUT-500117. Please help before I get a late fee.",auto,payment_information,high,AUT-500117,,reply_to_client,"Policy record found and active; the customer is asking for general payment help, which can be addressed without sensitive claim handling.","Dear Customer,
+
+Thank you for reaching out. I’m sorry to hear your automatic payment failed again.
+
+I can confirm that policy AUT-500117 is currently active. For payment issues, please review the payment method on file and contact your billing provider or update the card details through your account if needed. If the payment has already been updated and the issue continues, please contact support so the payment setup can be reviewed.
+
+If you are concerned about a possible late fee, please reach out as soon as possible so the issue can be addressed promptly.
+
+Sincerely,
+Customer Support",
+insurance-email-139,Travel insurance change due to date shift,"Hello, my trip dates have shifted slightly and I want to adjust the travel policy to match. Policy TRV-413089. Let me know if that is possible.",travel,policy_change,medium,TRV-413089,,reply_to_client,"Policy was found and is active; the customer is asking a general question about changing travel dates, which can be answered safely without making policy changes.","Subject: Re: Travel insurance change due to date shift
+
+Hello,
+
+Thank you for your message. Your travel policy TRV-413089 is active.
+
+If your trip dates have changed, it may be possible to update the policy to match the revised travel dates, subject to the policy terms and any eligibility requirements. Please reply with the new trip dates and any other updated travel details, and we can let you know the next steps.
+
+Kind regards,
+Customer Service",
+insurance-email-140,Need copy of home claim decision,"Good evening, could you send me the decision letter for my home claim? Claim number HCL-905744. I need the paperwork for my landlord.",home,document_request,medium,,HCL-905744,reply_to_client,"Claim record found and the request is a straightforward document request; no sensitive decision outcome is needed to answer safely. The claim is still pending additional documents, so the response should provide the current status and direct the client to the appropriate next step without inventing a decision letter.","Subject: Re: Need copy of home claim decision
+
+Good evening,
+
+We located your home claim, HCL-905744. The claim is currently waiting for additional estimate documents before the review can continue.
+
+At this stage, there is not yet a final decision letter available to provide. Once the required documents are received and the review is completed, any available correspondence will be issued through the usual process.
+
+If you have the requested estimate documents ready, please submit them as soon as possible so the claim can move forward.
+
+Kind regards,
+Claims Team",
+insurance-email-141,Auto policy and learner driver,"Hi, my teenage son has started learning to drive and I want to know if he can be covered on my auto policy. Policy AUT-228470. He only drives with supervision.",auto,policy_information,medium,AUT-228470,,escalate_to_human,"Policy found but it is expired/lapsed, and the customer asks for coverage guidance that may depend on current policy terms not available here.",,"Please review policy AUT-228470. The record shows the policy lapsed before this contact. Advise whether any learner-driver coverage guidance can be provided for the current or most recent policy terms, and whether the customer needs to be directed to renew/reactivate coverage."
+insurance-email-142,Travel claim for missed baggage connection,"Hello, my luggage missed the connection and arrived two days late. I filed a travel claim but I don't know what expenses are acceptable. Policy TRV-642118.",travel,claim_status,medium,TRV-642118,,escalate_to_human,"Policy record found but it is cancelled before the trip date; the customer is asking about claim coverage/acceptable expenses, which requires careful human review and claim-specific guidance not available here.",,Customer asks what expenses are acceptable for a travel baggage-delay claim under policy TRV-642118. Policy is cancelled before the trip date. Please verify whether any claim can be handled under this cancelled policy and provide appropriate coverage guidance if applicable.
+insurance-email-143,Home insurance when renovating,"Dear team, we are planning some renovation work in the house and I want to check if I need to tell you. Policy HMO-937205. The work starts next month.",home,policy_information,medium,HMO-937205,,reply_to_client,Policy found and active; the customer asks a general policy-information question that can be answered safely without additional internal detail.,"Dear Customer,
+
+Thank you for your email. I can confirm that policy HMO-937205 is active and valid.
+
+For renovation work, it is usually important to let us know before the work starts, especially if it involves structural changes, extensions, or major alterations. Please contact us with the details of the planned work so we can advise you on any next steps.
+
+Kind regards,
+Customer Care",
+insurance-email-144,Need duplicate payment receipt,"Hi, can you send me a receipt for my last auto insurance payment? Policy AUT-114399. My records are incomplete.",auto,document_request,medium,AUT-114399,,escalate_to_human,"Policy number was provided, but the policy record was not found, so the receipt request cannot be completed safely.",,Customer requests a duplicate receipt for last auto insurance payment for policy AUT-114399. Policy lookup returned not found. Please verify the policy number and check whether the customer account can be located by other identifiers before responding.
+insurance-email-145,Travel claim after medical appointment,"Good afternoon, I had to pay for an appointment while on holiday because I felt unwell. Can I claim this on my travel insurance? Policy TRV-771430. I have the invoice.",travel,claim_opening,medium,TRV-771430,,reply_to_client,Policy was found and is active; the email is a general claim-opening query that can be answered safely without making any decision on coverage or payment.,"Subject: Re: Travel claim after medical appointment
+
+Good afternoon,
+
+Thank you for your email. I can confirm that your travel policy is active.
+
+If you would like to submit a claim for the medical appointment, please send us the invoice and any supporting documents relating to the treatment. Once received, the claim can be reviewed in line with the policy terms and conditions.
+
+Kind regards,
+Customer Service",
+insurance-email-146,Complaint about claim handling,"Hello, I am frustrated because every time I call about claim CLM-470833 I get a different answer. This has been very poor service and I need someone to sort it out now.",other,complaint,high,,CLM-470833,escalate_to_human,Complaint about claim handling requires human review; contested service issue and no safe automated resolution.,,"Customer is ફરિયાદ/complaining about inconsistent answers on claim CLM-470833 and requests intervention. Please review claim handling history, contact notes, and service interactions, then respond directly."
+insurance-email-147,Home policy for holiday let,"Dear support, I may start renting my house as a holiday let for short periods. Does my home insurance allow that? Policy HMO-240761. Please let me know.",home,policy_information,medium,HMO-240761,,reply_to_client,Policy record found and the customer is asking a straightforward coverage question that can be answered from the available policy details.,"Dear Customer,
+
+Thank you for your email regarding policy HMO-240761.
+
+We can confirm that this is an active home policy with standard cover. However, the policy record available here does not state whether short-term holiday letting is allowed.
+
+If you are planning to rent out your home as a holiday let, please have the arrangement reviewed to confirm whether any cover changes or additional terms are needed.
+
+Kind regards,
+Customer Support",
+insurance-email-148,Auto claim estimate request,"Hi, I want to know if I can get an estimate before opening a full claim for the damage to my bumper. Policy AUT-879160. It is only a small scrape.",auto,claim_opening,medium,AUT-879160,,reply_to_client,"Policy was found and is active; the customer is asking a general estimate/process question, which can be answered without claim details.","Hello,
+
+Thank you for reaching out. I can confirm your auto policy is active. For damage such as a bumper scrape, you may contact us to start the claim process and request an estimate review.
+
+If you would like to move forward, please reply with a brief description of the damage and any photos you may have available. We can then help you with the next steps.
+
+Best regards,
+Customer Service",
+insurance-email-149,Travel policy question about spouse,"Hello, my wife will join my trip later than me. Is she still covered under my travel policy if she arrives separately? Policy TRV-308452.",travel,policy_information,medium,TRV-308452,,escalate_to_human,Policy was found but is cancelled and inactive; spouse coverage question requires human review against policy wording and any cancellation implications.,,"Customer asks whether their spouse is covered under travel policy TRV-308452 when arriving separately. The policy is cancelled/inactive, so a human should verify the policy wording and whether any coverage could apply despite cancellation before responding."
+insurance-email-150,Need confirmation of home cover,"Dear insurance team, I just want written confirmation that my home insurance is active and up to date. Policy HMO-619874. Please send a brief confirmation by email.",home,document_request,medium,HMO-619874,,reply_to_client,Policy record found and the status is clear enough to answer the confirmation request safely.,"Dear Customer,
+
+Thank you for your email. I checked policy HMO-619874, and it is currently expired. Because of this, I can’t confirm that the home insurance is active and up to date.
+
+If you would like, please contact us to discuss your options for renewing or updating the policy.
+
+Kind regards,
+Insurance Team",
