@@ -193,11 +193,7 @@ Create a `.env` file in the project root:
 
 ```env
 OPENAI_API_KEY=your_api_key
-OPENAI_MODEL=gpt-5.4-mini
-MAX_EMAILS=5
 ```
-
-`MAX_EMAILS` can be used during testing to limit the number of processed emails. Set it to the complete dataset size or leave it empty, according to the implementation, to process all available requests.
 
 ## Usage
 
